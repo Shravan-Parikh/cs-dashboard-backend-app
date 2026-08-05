@@ -2,7 +2,13 @@ import { Router } from 'express';
 import archiver from 'archiver';
 import { downloadPdf, resolvePdfUrl } from '../bseClient.js';
 
-const router = Router();
+// Public router: only the read-only PDF proxy. It's public because the link is
+// opened in a new browser tab (which can't send the Authorization header), and
+// it only ever serves BSE's own public attachment URLs (validated below).
+export const pdfRouter = Router();
+
+// Authenticated router: the batch ZIP export (called via fetch with a token).
+export const exportRouter = Router();
 
 const BSE_HOST = 'www.bseindia.com';
 
@@ -21,7 +27,7 @@ function isBseAttachment(url) {
  * Streams the PDF through our server (BSE blocks refererless browser clicks
  * and CORS), resolving Live/His automatically.
  */
-router.get('/pdf', async (req, res) => {
+pdfRouter.get('/pdf', async (req, res) => {
   const url = String(req.query.url || '');
   if (!isBseAttachment(url)) return res.status(400).json({ error: 'Invalid PDF url' });
   try {
@@ -38,7 +44,7 @@ router.get('/pdf', async (req, res) => {
  * POST /api/export/zip  body: { items: [{ url, name }], filename? }
  * Bundles the given PDFs into a ZIP and streams it back.
  */
-router.post('/export/zip', async (req, res) => {
+exportRouter.post('/export/zip', async (req, res) => {
   const items = Array.isArray(req.body?.items) ? req.body.items : [];
   const filename = (req.body?.filename || 'bse_pdfs').replace(/[^A-Za-z0-9_-]/g, '_');
   const valid = items.filter((i) => i && isBseAttachment(i.url));
@@ -69,5 +75,3 @@ router.post('/export/zip', async (req, res) => {
   }
   await archive.finalize();
 });
-
-export default router;

@@ -5,7 +5,7 @@ import { requireAuth } from './middleware/auth.js';
 import authRoutes from './routes/auth.js';
 import companyRoutes from './routes/companies.js';
 import announcementRoutes from './routes/announcements.js';
-import exportRoutes from './routes/export.js';
+import { pdfRouter, exportRouter } from './routes/export.js';
 
 const app = express();
 
@@ -25,10 +25,14 @@ app.get('/api/health', (_req, res) => res.json({ ok: true, service: 'cs-dashboar
 // Public auth routes
 app.use('/api/auth', authRoutes);
 
+// Public PDF proxy — opened directly in a browser tab, so it can't carry a
+// Bearer token. Safe: it only serves validated BSE public attachment URLs.
+app.use('/api', pdfRouter);
+
 // Everything below requires a valid token
 app.use('/api', requireAuth, companyRoutes);
 app.use('/api', requireAuth, announcementRoutes);
-app.use('/api', requireAuth, exportRoutes);
+app.use('/api', requireAuth, exportRouter);
 
 app.use((_req, res) => res.status(404).json({ error: 'Not found' }));
 
