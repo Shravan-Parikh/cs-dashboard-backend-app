@@ -1,0 +1,66 @@
+// ⚠️  READ THIS BEFORE PUBLISHING
+//
+// Firestore rules are PROJECT-WIDE and publishing REPLACES the entire ruleset.
+// This project (thrift-store-16ada) is shared with another app, so do NOT paste
+// this file in as-is — that would drop the other app's rules and break it.
+//
+// Instead: open Firebase Console → Firestore → Rules, and paste ONLY the
+// `cs_*` blocks below into your existing ruleset, alongside what's already there.
+//
+// Everything here is scoped to collections prefixed `cs_`, so no existing
+// collection is read, written or affected.
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------------------------------------------------------------------
+    // ⬇️  KEEP YOUR EXISTING RULES HERE (the thrift-store app's collections)
+    // ---------------------------------------------------------------------
+
+
+    // ---------------------------------------------------------------------
+    // ⬇️  CS Dashboard — copy from here down
+    // ---------------------------------------------------------------------
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/cs_users/$(request.auth.uid))
+        && get(/databases/$(database)/documents/cs_users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // User profiles. A user owns their own document; admins may list users.
+    match /cs_users/{uid} {
+      allow read:   if isOwner(uid) || isAdmin();
+      allow create: if isOwner(uid);
+      allow update: if isOwner(uid);
+      allow delete: if false;
+    }
+
+    // Per-user data: one document each, keyed by uid.
+    match /cs_watchlists/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    match /cs_saved_views/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    // Usage log. Users may only append events stamped with their own uid, and
+    // may never read, edit or delete them. Admins read for pilot feedback.
+    match /cs_activity/{eventId} {
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid;
+      allow read:   if isAdmin();
+      allow update, delete: if false;
+    }
+  }
+}

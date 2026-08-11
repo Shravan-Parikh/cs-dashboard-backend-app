@@ -73,7 +73,7 @@ Collections are all prefixed `cs_` so a shared Firebase project is untouched:
 | `cs_saved_views/{uid}` | saved filter presets |
 | `cs_activity/{id}` | usage log — what the pilot actually uses |
 
-> **Security rules** live in `firestore.rules` in the monorepo and are a
+> **Security rules** live in `firestore.rules` in this repo and are a
 > *fragment to merge*, not a ruleset to publish — Firestore rules are
 > project-wide and publishing replaces everything.
 
