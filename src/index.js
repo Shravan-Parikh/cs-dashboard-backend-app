@@ -1,11 +1,15 @@
 import express from 'express';
 import cors from 'cors';
-import { config } from './config.js';
+import { config, assertConfig } from './config.js';
 import { requireAuth } from './middleware/auth.js';
 import authRoutes from './routes/auth.js';
 import companyRoutes from './routes/companies.js';
 import announcementRoutes from './routes/announcements.js';
+import complianceRoutes from './routes/compliance.js';
+import workspaceRoutes from './routes/workspace.js';
 import { pdfRouter, exportRouter } from './routes/export.js';
+
+assertConfig();
 
 const app = express();
 
@@ -32,7 +36,12 @@ app.use('/api', pdfRouter);
 // Everything below requires a valid token
 app.use('/api', requireAuth, companyRoutes);
 app.use('/api', requireAuth, announcementRoutes);
+app.use('/api', requireAuth, complianceRoutes);
 app.use('/api', requireAuth, exportRouter);
+
+// Persistent per-user data (watchlist, saved views) + admin views. These carry
+// their own requireAuth so the admin guard can run straight after it.
+app.use('/api', workspaceRoutes);
 
 app.use((_req, res) => res.status(404).json({ error: 'Not found' }));
 

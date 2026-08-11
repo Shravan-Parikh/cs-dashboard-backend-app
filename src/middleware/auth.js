@@ -1,22 +1,40 @@
-import jwt from 'jsonwebtoken';
-import { config } from '../config.js';
+import { verifyIdToken, getDoc, FirebaseError } from '../firebase.js';
 
-export function signToken(user) {
-  return jwt.sign({ sub: user.id, email: user.email, name: user.name }, config.jwtSecret, {
-    expiresIn: '7d',
-  });
-}
-
-/** Express middleware — requires a valid Bearer token, attaches req.user. */
-export function requireAuth(req, res, next) {
+/**
+ * Requires a valid Firebase ID token. Attaches:
+ *   req.user    { uid, email, name }
+ *   req.idToken the raw token, so downstream Firestore calls run AS the user
+ *               and are subject to security rules.
+ */
+export async function requireAuth(req, res, next) {
   const header = req.headers.authorization || '';
   const token = header.startsWith('Bearer ') ? header.slice(7) : null;
   if (!token) return res.status(401).json({ error: 'Missing token' });
   try {
-    const payload = jwt.verify(token, config.jwtSecret);
-    req.user = { id: payload.sub, email: payload.email, name: payload.name };
+    const payload = await verifyIdToken(token);
+    req.user = {
+      uid: payload.sub,
+      email: payload.email || '',
+      name: payload.name || payload.display_name || '',
+    };
+    req.idToken = token;
     next();
-  } catch {
-    return res.status(401).json({ error: 'Invalid or expired token' });
+  } catch (e) {
+    const status = e instanceof FirebaseError ? e.status : 401;
+    return res.status(status).json({ error: e.message || 'Invalid or expired token' });
+  }
+}
+
+/** Requires the caller's profile to carry role === 'admin'. Use after requireAuth. */
+export async function requireAdmin(req, res, next) {
+  try {
+    const profile = await getDoc('cs_users', req.user.uid, req.idToken);
+    if (profile?.role !== 'admin') {
+      return res.status(403).json({ error: 'Admin access required' });
+    }
+    req.profile = profile;
+    next();
+  } catch (e) {
+    return res.status(e?.status || 500).json({ error: e.message || 'Could not verify role' });
   }
 }
