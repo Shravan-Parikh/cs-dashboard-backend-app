@@ -13,11 +13,27 @@ assertConfig();
 
 const app = express();
 
+/**
+ * An allowed origin is either an exact match or a `*.` wildcard entry, so a
+ * single `https://*.vercel.app` covers every preview deployment without
+ * re-configuring the service on each push.
+ */
+function originAllowed(origin) {
+  return config.corsOrigins.some((allowed) => {
+    if (allowed === origin) return true;
+    if (!allowed.includes('*')) return false;
+    const pattern = new RegExp(
+      `^${allowed.split('*').map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[^.]*')}$`,
+    );
+    return pattern.test(origin);
+  });
+}
+
 app.use(
   cors({
     origin: (origin, cb) => {
-      // allow same-origin / curl (no origin) and configured frontends
-      if (!origin || config.corsOrigins.includes(origin)) return cb(null, true);
+      // allow same-origin / curl / server-to-server (no Origin header)
+      if (!origin || originAllowed(origin)) return cb(null, true);
       return cb(null, false);
     },
   }),
