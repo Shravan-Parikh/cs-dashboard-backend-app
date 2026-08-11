@@ -7,6 +7,9 @@
  * If BSE changes the API, this is the single file to patch.
  */
 
+import { request as httpsRequest } from 'node:https';
+import { createGunzip, createInflate, createBrotliDecompress } from 'node:zlib';
+
 const ANN_URL = 'https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w';
 const ATTACH_LIVE = (name) => `https://www.bseindia.com/xml-data/corpfiling/AttachLive/${name}`;
 const ATTACH_HIS = (name) => `https://www.bseindia.com/xml-data/corpfiling/AttachHis/${name}`;
@@ -24,6 +27,19 @@ export const CATEGORIES = [
   'Others',
 ];
 
+/**
+ * BSE's limits, established by probing the live endpoint:
+ *
+ *  - single scrip (strscrip set)  → no date-span limit (180d works fine)
+ *  - market-wide + strCat='-1'    → ONE DAY only; wider ranges return `{}`
+ *  - market-wide + named category → ~30 days; wider returns `{}`
+ *
+ * The span cap is volume-independent (30d/19k rows succeeds, 60d/125 rows
+ * fails), so it's a server-side date check, not a result-size guard. We chunk
+ * market-wide queries at 25 days to stay safely inside a flaky boundary.
+ */
+export const MARKET_MAX_SPAN_DAYS = 25;
+
 export const HEADERS = {
   'User-Agent':
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ' +
@@ -34,6 +50,64 @@ export const HEADERS = {
   Origin: 'https://www.bseindia.com',
   Connection: 'keep-alive',
 };
+
+/**
+ * BSE occasionally serves responses with malformed HTTP/1.1 headers — a leading
+ * space before the header name (" X-Frame-Options: SAMEORIGIN"). Node's fetch
+ * (undici) rejects those outright with "Response does not match the HTTP/1.1
+ * protocol", and it is *deterministic* per response: retrying never helps, and
+ * some pages become permanently unreachable (e.g. page 4+ of a year of Reliance
+ * filings). node:https can be told to tolerate it via insecureHTTPParser.
+ *
+ * So: try fetch first, and fall back to the lenient parser only when undici
+ * refuses to parse. `insecureHTTPParser` relaxes header framing only — TLS
+ * verification is untouched.
+ */
+function insecureGet(url, headers, timeoutMs) {
+  return new Promise((resolve, reject) => {
+    const req = httpsRequest(
+      url,
+      { method: 'GET', headers: { ...headers, 'Accept-Encoding': 'gzip, deflate' }, insecureHTTPParser: true },
+      (res) => {
+        const enc = String(res.headers['content-encoding'] || '').toLowerCase();
+        let stream = res;
+        if (enc.includes('br')) stream = res.pipe(createBrotliDecompress());
+        else if (enc.includes('gzip')) stream = res.pipe(createGunzip());
+        else if (enc.includes('deflate')) stream = res.pipe(createInflate());
+
+        const chunks = [];
+        stream.on('data', (c) => chunks.push(c));
+        stream.on('end', () =>
+          resolve({
+            ok: res.statusCode >= 200 && res.statusCode < 300,
+            status: res.statusCode,
+            body: Buffer.concat(chunks),
+          }),
+        );
+        stream.on('error', reject);
+      },
+    );
+    req.on('error', reject);
+    req.setTimeout(timeoutMs, () => req.destroy(new Error('BSE request timed out')));
+    req.end();
+  });
+}
+
+const isParserError = (e) => {
+  const m = `${e?.message || ''} ${e?.cause?.message || ''} ${e?.cause?.code || ''}`;
+  return /HTTP\/1\.1 protocol|HPE_|Parse Error|header/i.test(m);
+};
+
+/** GET a BSE URL, tolerating their malformed headers. Returns { ok, status, body }. */
+export async function bseGet(url, { timeoutMs = 30000 } = {}) {
+  try {
+    const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(timeoutMs) });
+    return { ok: res.ok, status: res.status, body: Buffer.from(await res.arrayBuffer()) };
+  } catch (e) {
+    if (!isParserError(e)) throw e;
+    return insecureGet(url, HEADERS, timeoutMs);
+  }
+}
 
 /** YYYYMMDD from a JS Date or 'YYYY-MM-DD' string. */
 function fmt(d) {
@@ -53,8 +127,7 @@ export function buildPdfUrl(attachment, historical = false) {
  * BSE returns the body as a JSON-*encoded string* (double-encoded), and a bare
  * "No Record Found!" string when a query matches nothing. Normalise to an object.
  */
-async function decode(res) {
-  const text = await res.text();
+function decode(text) {
   let data;
   try {
     data = JSON.parse(text);
@@ -76,7 +149,10 @@ async function decode(res) {
 function pick(row, ...keys) {
   for (const k of keys) {
     const v = row[k];
-    if (v !== undefined && v !== null && v !== '') return String(v).trim();
+    if (v !== undefined && v !== null && v !== '') {
+      // BSE leaks SQL-escaped quotes into text fields ("scrutinizer''s report").
+      return String(v).trim().replace(/''/g, "'");
+    }
   }
   return '';
 }
@@ -98,35 +174,144 @@ function parseRow(row) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+export const PAGE_SIZE = 50;
+
+/**
+ * Run async thunks with a bounded concurrency. A thunk that throws resolves to
+ * `null` so one bad page never sinks a whole feed.
+ */
+export async function pool(tasks, limit = 6) {
+  const out = new Array(tasks.length);
+  let next = 0;
+  await Promise.all(
+    Array.from({ length: Math.min(limit, tasks.length) }, async () => {
+      while (next < tasks.length) {
+        const i = next++;
+        try {
+          out[i] = await tasks[i]();
+        } catch {
+          out[i] = null;
+        }
+      }
+    }),
+  );
+  return out;
+}
+
+/**
+ * One page of announcements. Returns { rows, total } — `total` comes from
+ * BSE's Table1[0].ROWCNT, which is what makes real pagination possible.
+ *
+ * `subcategory` is filtered server-side by exact name (verified), so passing it
+ * is far cheaper than fetching a whole category and filtering locally.
+ */
+export async function fetchPage({
+  from,
+  to,
+  scripCode = '',
+  category = '-1',
+  subcategory = '-1',
+  page = 1,
+  attempts = 3,
+}) {
+  const params = new URLSearchParams({
+    pageno: String(page),
+    strCat: category || '-1',
+    subcategory: subcategory || '-1',
+    strPrevDate: fmt(from),
+    strToDate: fmt(to),
+    strSearch: 'P',
+    strscrip: scripCode || '',
+    strType: 'C',
+  });
+
+  // BSE also drops a share of requests under concurrency, so give each page a
+  // couple of tries with backoff. Without this a single blip loses a slice.
+  let lastErr;
+  for (let attempt = 0; attempt < attempts; attempt++) {
+    if (attempt > 0) await sleep(300 * attempt);
+    try {
+      const res = await bseGet(`${ANN_URL}?${params}`);
+      if (!res.ok) throw new Error(`BSE ${res.status} for scrip ${scripCode || 'market'}`);
+      const payload = decode(res.body.toString('utf8'));
+      const rows = (payload.Table || []).map(parseRow);
+      const total = Number(payload.Table1?.[0]?.ROWCNT ?? rows.length) || 0;
+      return { rows, total };
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr;
+}
+
 /** Fetch announcements for a single scrip (or all if empty) over a date range. */
 export async function fetchAnnouncements({
   from,
   to,
   scripCode = '',
   category = '-1',
+  subcategory = '-1',
   maxPages = 25,
 }) {
   const results = [];
   for (let page = 1; page <= maxPages; page++) {
-    const params = new URLSearchParams({
-      pageno: String(page),
-      strCat: category || '-1',
-      subcategory: '-1',
-      strPrevDate: fmt(from),
-      strToDate: fmt(to),
-      strSearch: 'P',
-      strscrip: scripCode || '',
-      strType: 'C',
-    });
-    const res = await fetch(`${ANN_URL}?${params}`, { headers: HEADERS });
-    if (!res.ok) throw new Error(`BSE ${res.status} for scrip ${scripCode}`);
-    const payload = await decode(res);
-    const rows = payload.Table || [];
+    let rows;
+    try {
+      ({ rows } = await fetchPage({ from, to, scripCode, category, subcategory, page }));
+    } catch (e) {
+      // Page 1 failing means we have nothing to show, so surface it. A later
+      // page failing should degrade to a partial result, not lose everything.
+      if (page === 1) throw e;
+      break;
+    }
     if (rows.length === 0) break;
-    results.push(...rows.map(parseRow));
-    if (rows.length < 50) break;
+    results.push(...rows);
+    if (rows.length < PAGE_SIZE) break;
   }
   return results;
+}
+
+/**
+ * Fetch every page of one (category, subcategory) slice concurrently.
+ * Page 1 tells us the total, so the rest can go out in parallel.
+ */
+export async function fetchSlice(
+  { from, to, scripCode = '', category = '-1', subcategory = '-1' },
+  { maxPages = 4, concurrency = 6 } = {},
+) {
+  // Page 1 is load-bearing — it carries the total that sizes the rest.
+  const first = await fetchPage({ from, to, scripCode, category, subcategory, page: 1 });
+  const pages = Math.min(Math.ceil(first.total / PAGE_SIZE) || 1, maxPages);
+  if (pages <= 1) return { rows: first.rows, total: first.total, truncated: false };
+
+  const rest = await pool(
+    Array.from({ length: pages - 1 }, (_, i) => () =>
+      fetchPage({ from, to, scripCode, category, subcategory, page: i + 2 }),
+    ),
+    concurrency,
+  );
+  const rows = [...first.rows, ...rest.flatMap((r) => r?.rows || [])];
+  return {
+    rows,
+    total: first.total,
+    truncated: first.total > pages * PAGE_SIZE,
+  };
+}
+
+/** Split [from, to] into windows of at most `spanDays` (BSE market-wide cap). */
+export function dateWindows(from, to, spanDays = MARKET_MAX_SPAN_DAYS) {
+  const start = typeof from === 'string' ? new Date(from + 'T00:00:00') : new Date(from);
+  const end = typeof to === 'string' ? new Date(to + 'T00:00:00') : new Date(to);
+  const windows = [];
+  let cursor = new Date(start);
+  while (cursor <= end) {
+    const wEnd = new Date(cursor);
+    wEnd.setDate(wEnd.getDate() + spanDays - 1);
+    windows.push({ from: new Date(cursor), to: wEnd > end ? new Date(end) : wEnd });
+    cursor = new Date(wEnd);
+    cursor.setDate(cursor.getDate() + 1);
+  }
+  return windows;
 }
 
 /**
@@ -171,12 +356,8 @@ export async function resolvePdfUrl(url) {
   if (!url) return '';
   for (const candidate of alternates(url)) {
     try {
-      const res = await fetch(candidate, { headers: HEADERS });
-      if (res.ok) {
-        // don't consume the body
-        try { await res.body?.cancel(); } catch { /* noop */ }
-        return candidate;
-      }
+      const res = await bseGet(candidate);
+      if (res.ok) return candidate;
     } catch {
       // try next
     }
@@ -200,8 +381,8 @@ export async function downloadPdf(url) {
   let lastErr;
   for (const candidate of alternates(url)) {
     try {
-      const res = await fetch(candidate, { headers: HEADERS });
-      if (res.ok) return Buffer.from(await res.arrayBuffer());
+      const res = await bseGet(candidate);
+      if (res.ok) return res.body;
       lastErr = new Error(`HTTP ${res.status}`);
     } catch (e) {
       lastErr = e;
