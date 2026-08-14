@@ -96,6 +96,14 @@ router.get('/announcements/latest', async (req, res) => {
   const buckets = resolveBuckets(req.query.buckets);
   const keyword = String(req.query.keyword || '').trim().toLowerCase();
   const index = String(req.query.index || 'All');
+  // Explicit scrip list — lets the dashboard narrow the fast market-wide sweep
+  // to a user's watchlist without making one BSE call per company.
+  const scrips = new Set(
+    String(req.query.scrips || '')
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean),
+  );
 
   const to = new Date();
   const from = new Date();
@@ -161,7 +169,9 @@ router.get('/announcements/latest', async (req, res) => {
     perBucket[r.bucket] = (perBucket[r.bucket] || 0) + 1;
   });
 
-  if (index && index !== 'All') {
+  if (scrips.size > 0) {
+    rows = rows.filter((r) => scrips.has(r.scrip_code));
+  } else if (index && index !== 'All') {
     const allowed = new Set(companiesForIndex(index).map((c) => c.scrip_code));
     rows = rows.filter((r) => allowed.has(r.scrip_code));
   }
@@ -189,6 +199,8 @@ router.get('/announcements/latest', async (req, res) => {
       total,
       returned: rows.length,
       truncated,
+      scoped: scrips.size > 0 ? 'scrips' : index !== 'All' ? 'index' : 'market',
+      fetchedAt: new Date().toISOString(),
       elapsedMs: Date.now() - started,
     },
   });

@@ -35,6 +35,43 @@ export const AUTHORITIES = [
 ];
 
 /**
+ * Company types, because the calendar is otherwise wrong for most CS clients.
+ * The SEBI regulations (LODR, PIT, SAST) bind *listed* entities — applying them
+ * to a private company invents obligations that don't exist, and omitting
+ * PAS-6 for an unlisted public company misses one that does.
+ */
+export const COMPANY_TYPES = [
+  {
+    id: 'listed',
+    label: 'Listed company',
+    note: 'Equity listed on a recognised stock exchange — SEBI LODR, PIT and SAST all apply.',
+  },
+  {
+    id: 'unlisted-public',
+    label: 'Unlisted public company',
+    note: 'Companies Act obligations plus PAS-6. SEBI listing regulations do not apply unless its debt is listed.',
+  },
+  {
+    id: 'private',
+    label: 'Private limited company',
+    note: 'Companies Act only. No SEBI regulations, no PAS-6.',
+  },
+  {
+    id: 'opc',
+    label: 'One Person Company',
+    note: 'Companies Act with OPC relaxations — no AGM, and a lighter board-meeting requirement.',
+  },
+];
+
+export const COMPANY_TYPE_IDS = COMPANY_TYPES.map((t) => t.id);
+export const DEFAULT_COMPANY_TYPE = 'listed';
+
+/** Everything the Companies Act applies to, regardless of listing status. */
+const ALL_TYPES = ['listed', 'unlisted-public', 'private', 'opc'];
+/** SEBI listing/insider/takeover regulations bind listed entities only. */
+const LISTED_ONLY = ['listed'];
+
+/**
  * @typedef {Object} Rule
  * @property {string} id
  * @property {string} title
@@ -46,8 +83,19 @@ export const AUTHORITIES = [
  * @property {string} [fixed]        'MM-DD' for ANNUAL_FIXED
  * @property {number[]} [skipQuarters] 1=Apr-Jun … 4=Jan-Mar
  * @property {string} [periodLabel]  overrides the default period label
+ * @property {string[]} [appliesTo]  company types; defaults from `authority`
  * @property {string} [note]
  */
+
+/**
+ * Which company types a rule binds. Derived from the authority — the SEBI
+ * regulations apply to listed entities and the Companies Act to everyone — so
+ * only genuine divergences (OPC's AGM exemption, PAS-6) need spelling out.
+ */
+function typesFor(rule) {
+  if (rule.appliesTo) return rule.appliesTo;
+  return rule.authority === 'Companies Act' ? ALL_TYPES : LISTED_ONLY;
+}
 
 /** @type {Rule[]} */
 export const RULES = [
@@ -202,16 +250,43 @@ export const RULES = [
     kind: 'Meeting',
     frequency: FREQ.ANNUAL_FY,
     offsetDays: 183,
+    // s.96(1) expressly exempts a One Person Company from holding an AGM.
+    appliesTo: ['listed', 'unlisted-public', 'private'],
     note: 'Within 6 months of financial year end, and not more than 15 months after the previous AGM.',
+  },
+  {
+    id: 'ca-pas6',
+    title: 'PAS-6 — reconciliation of share capital audit',
+    authority: 'Companies Act',
+    reference: 'Rule 9A, PAS Rules',
+    kind: 'Certificate',
+    frequency: FREQ.HALF_YEARLY,
+    offsetDays: 60,
+    // The unlisted-public counterpart of the listed company's Reg. 76 report.
+    appliesTo: ['unlisted-public'],
+    note: 'Within 60 days of each half-year end, certified by a Practising Company Secretary or Chartered Accountant.',
   },
   {
     id: 'ca-aoc4',
     title: 'AOC-4 — financial statements with the RoC',
     authority: 'Companies Act',
-    reference: 's.137',
+    reference: 's.137(1)',
     kind: 'Filing',
     frequency: FREQ.AGM_RELATIVE,
     offsetDays: 30,
+    // An OPC holds no AGM, so its deadline runs from FY end instead — see below.
+    appliesTo: ['listed', 'unlisted-public', 'private'],
+  },
+  {
+    id: 'ca-aoc4-opc',
+    title: 'AOC-4 — financial statements with the RoC',
+    authority: 'Companies Act',
+    reference: 's.137(1) proviso',
+    kind: 'Filing',
+    frequency: FREQ.ANNUAL_FY,
+    offsetDays: 180,
+    appliesTo: ['opc'],
+    note: 'An OPC files within 180 days of financial year end, since it holds no AGM to measure from.',
   },
   {
     id: 'ca-mgt7',
@@ -221,6 +296,19 @@ export const RULES = [
     kind: 'Filing',
     frequency: FREQ.AGM_RELATIVE,
     offsetDays: 60,
+    appliesTo: ['listed', 'unlisted-public', 'private'],
+  },
+  {
+    id: 'ca-mgt7a-opc',
+    title: 'MGT-7A — abridged annual return',
+    authority: 'Companies Act',
+    reference: 's.92 / Rule 11(1)',
+    kind: 'Filing',
+    frequency: FREQ.AGM_RELATIVE,
+    offsetDays: 60,
+    appliesTo: ['opc'],
+    periodLabel: 'from deemed AGM date',
+    note: 'An OPC and a small company file MGT-7A rather than MGT-7. With no AGM held, the 60 days run from the last date on which an AGM should have been held.',
   },
   {
     id: 'ca-dir3kyc',
@@ -314,7 +402,9 @@ export const EVENT_RULES = [
     authority: 'Companies Act',
     reference: 's.117',
     trigger: 'On passing a resolution requiring filing',
-    deadline: 'Within 30 days of passing.',
+    appliesTo: ALL_TYPES,
+    deadline:
+      'Within 30 days of passing. Note that s.117(3)(g) exempts private companies from filing board resolutions under s.179(3).',
   },
   {
     id: 'ca-173',
@@ -322,7 +412,18 @@ export const EVENT_RULES = [
     authority: 'Companies Act',
     reference: 's.173(1)',
     trigger: 'Ongoing through the financial year',
+    appliesTo: ['listed', 'unlisted-public', 'private'],
     deadline: 'At least 4 meetings per year with no more than 120 days between two consecutive meetings.',
+  },
+  {
+    id: 'ca-173-opc',
+    title: 'Board meetings — OPC relaxation',
+    authority: 'Companies Act',
+    reference: 's.173(5)',
+    trigger: 'Ongoing through the calendar year',
+    appliesTo: ['opc'],
+    deadline:
+      'At least one meeting in each half of the calendar year, with a gap of not less than 90 days. An OPC with only one director need only record the decision in the minutes book.',
   },
   {
     id: 'pit-7-2',
@@ -384,15 +485,21 @@ const isoLocal = (date) =>
     date.getDate(),
   ).padStart(2, '0')}`;
 
+/** Event-driven obligations that bind a given company type. */
+export function eventRulesFor(companyType = DEFAULT_COMPANY_TYPE) {
+  return EVENT_RULES.filter((r) => typesFor(r).includes(companyType));
+}
+
 /**
- * All occurrences of every rule for one financial year.
+ * All occurrences of every rule for one financial year, for one company type.
  * `agmDate` (YYYY-MM-DD) drives the AGM-relative filings; it defaults to the
  * s.96 outer limit of 30 September.
  */
-export function occurrencesForFy(fyStart, agmDate) {
+export function occurrencesForFy(fyStart, agmDate, companyType = DEFAULT_COMPANY_TYPE) {
   const fyEnd = d(fyStart + 1, 2, 31);
   const agm = agmDate ? new Date(agmDate + 'T00:00:00') : d(fyStart + 1, 8, 30);
   const out = [];
+  const type = COMPANY_TYPE_IDS.includes(companyType) ? companyType : DEFAULT_COMPANY_TYPE;
 
   const push = (rule, due, period) =>
     out.push({
@@ -409,6 +516,7 @@ export function occurrencesForFy(fyStart, agmDate) {
     });
 
   for (const rule of RULES) {
+    if (!typesFor(rule).includes(type)) continue;
     switch (rule.frequency) {
       case FREQ.QUARTERLY:
         for (const q of quarterEnds(fyStart)) {
@@ -432,7 +540,11 @@ export function occurrencesForFy(fyStart, agmDate) {
         break;
       }
       case FREQ.AGM_RELATIVE:
-        push(rule, addDays(agm, rule.offsetDays ?? 0), `AGM ${isoLocal(agm)}`);
+        push(
+          rule,
+          addDays(agm, rule.offsetDays ?? 0),
+          rule.periodLabel || `AGM ${isoLocal(agm)}`,
+        );
         break;
       default:
         break;
@@ -448,14 +560,14 @@ export function occurrencesForFy(fyStart, agmDate) {
  * window touches, plus the one before (whose AGM-relative and Q4 filings spill
  * into the next year).
  */
-export function occurrencesBetween(from, to, agmDate) {
+export function occurrencesBetween(from, to, agmDate, companyType = DEFAULT_COMPANY_TYPE) {
   const start = new Date(from + 'T00:00:00');
   const end = new Date(to + 'T00:00:00');
   const fys = new Set();
   for (let y = fyOf(start) - 1; y <= fyOf(end) + 1; y++) fys.add(y);
 
   const all = [];
-  for (const fy of fys) all.push(...occurrencesForFy(fy, agmDate));
+  for (const fy of fys) all.push(...occurrencesForFy(fy, agmDate, companyType));
 
   const seen = new Set();
   return all

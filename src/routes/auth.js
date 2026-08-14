@@ -4,6 +4,7 @@ import {
   signUp,
   signIn,
   refreshIdToken,
+  sendPasswordReset,
   getDoc,
   setDoc,
   queryCollection,
@@ -122,6 +123,28 @@ router.post(
     const profile =
       (await getDoc(USERS, auth.uid, auth.idToken)) || { uid: auth.uid, role: 'member' };
     res.json(session(auth, profile));
+  }),
+);
+
+// --- Password reset --------------------------------------------------------
+
+/**
+ * Accounts are admin-provisioned during the pilot, so without this a forgotten
+ * password means a manual reset by hand. Always responds 200, whether or not the
+ * address exists, so the endpoint can't enumerate accounts.
+ */
+router.post(
+  '/forgot-password',
+  handle(async (req, res) => {
+    const email = String(req.body?.email || '').trim();
+    if (!email || !email.includes('@')) {
+      return res.status(400).json({ error: 'A valid email address is required' });
+    }
+    await sendPasswordReset(email);
+    res.json({
+      ok: true,
+      message: 'If that address has an account, a reset link is on its way.',
+    });
   }),
 );
 

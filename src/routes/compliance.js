@@ -2,11 +2,13 @@ import { Router } from 'express';
 import {
   occurrencesForFy,
   occurrencesBetween,
+  eventRulesFor,
   fyOf,
   fyLabel,
-  EVENT_RULES,
   AUTHORITIES,
-  RULES,
+  COMPANY_TYPES,
+  COMPANY_TYPE_IDS,
+  DEFAULT_COMPANY_TYPE,
 } from '../compliance.js';
 
 const router = Router();
@@ -32,6 +34,11 @@ router.get('/compliance', (req, res) => {
   const from = String(req.query.from || '');
   const to = String(req.query.to || '');
 
+  const requestedType = String(req.query.type || '');
+  const companyType = COMPANY_TYPE_IDS.includes(requestedType)
+    ? requestedType
+    : DEFAULT_COMPANY_TYPE;
+
   let occurrences;
   let scope;
 
@@ -40,13 +47,13 @@ router.get('/compliance', (req, res) => {
       return res.status(400).json({ error: 'from and to must be YYYY-MM-DD' });
     }
     if (from > to) return res.status(400).json({ error: 'from is after to' });
-    occurrences = occurrencesBetween(from, to, agmDate);
+    occurrences = occurrencesBetween(from, to, agmDate, companyType);
     scope = { type: 'range', from, to };
   } else {
     const now = new Date();
     const fy = Number.isFinite(Number(req.query.fy)) ? Number(req.query.fy) : fyOf(now);
     if (fy < 2000 || fy > 2100) return res.status(400).json({ error: 'fy out of range' });
-    occurrences = occurrencesForFy(fy, agmDate);
+    occurrences = occurrencesForFy(fy, agmDate, companyType);
     // A financial year's obligations don't all fall inside it: Q4 filings land in
     // April–May and the AGM chain runs to November. Report the real span of due
     // dates rather than 1 Apr – 31 Mar, which the results would contradict.
@@ -68,21 +75,29 @@ router.get('/compliance', (req, res) => {
     byAuthority[o.authority] = (byAuthority[o.authority] || 0) + 1;
   });
 
+  const events = eventRulesFor(companyType);
+  const typeInfo = COMPANY_TYPES.find((t) => t.id === companyType);
+
   res.json({
     occurrences,
-    events: EVENT_RULES,
+    events,
     meta: {
       scope,
       today,
       agmDate: agmDate || null,
-      agmAssumed: !agmDate,
+      // An OPC holds no AGM, so the AGM-relative caveat is meaningless for it.
+      agmAssumed: !agmDate && occurrences.some((o) => o.period.startsWith('AGM')),
+      companyType,
+      companyTypeLabel: typeInfo?.label || companyType,
+      companyTypeNote: typeInfo?.note || '',
+      companyTypes: COMPANY_TYPES,
       total: occurrences.length,
       upcoming: occurrences.filter((o) => o.due >= today).length,
       overdue: occurrences.filter((o) => o.due < today).length,
       byAuthority,
       authorities: AUTHORITIES,
-      ruleCount: RULES.length,
-      eventRuleCount: EVENT_RULES.length,
+      ruleCount: new Set(occurrences.map((o) => o.ruleId)).size,
+      eventRuleCount: events.length,
       disclaimer:
         'Standard statutory timelines with the governing provision cited on each item. ' +
         'A planning aid, not legal advice — extensions, exemptions and entity-category ' +

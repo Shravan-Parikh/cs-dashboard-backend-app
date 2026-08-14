@@ -126,6 +126,23 @@ export async function refreshIdToken(refreshToken) {
   };
 }
 
+/**
+ * Send a password-reset email. Firebase delivers it, so this needs no mail
+ * provider and costs nothing.
+ *
+ * Deliberately does not reveal whether the address exists — the caller always
+ * reports success, so this endpoint can't be used to enumerate pilot accounts.
+ */
+export async function sendPasswordReset(email) {
+  try {
+    await callIdentity('sendOobCode', { requestType: 'PASSWORD_RESET', email });
+  } catch (e) {
+    // EMAIL_NOT_FOUND is expected and must stay invisible to the caller.
+    if (e instanceof FirebaseError && /not found|Invalid credentials/i.test(e.message)) return;
+    throw e;
+  }
+}
+
 /** Set the display name on an existing account. */
 export async function updateDisplayName(idToken, displayName) {
   return callIdentity('update', { idToken, displayName, returnSecureToken: false });
