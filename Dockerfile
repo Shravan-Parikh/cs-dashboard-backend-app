@@ -15,8 +15,13 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 
-# Application code (src/data/companies.csv rides along inside src).
+# Application code. src/data rides along inside src — that's companies.csv and
+# the pre-built law corpus (src/data/law/*.json), which the API reads at boot so
+# it never has to scrape SEBI on a cold start.
 COPY src ./src
+# Note: refresh-law-corpus.js needs pdf-parse, which is a devDependency and so
+# is absent here by design (it's ~21 MB of PDF tooling the API never calls).
+# Rebuild the corpus locally or in CI and commit the JSON.
 COPY scripts ./scripts
 
 # Drop root — the base image ships an unprivileged `node` user.

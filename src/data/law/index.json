@@ -1,0 +1,50 @@
+{
+  "builtAt": "2026-08-21T09:33:47.116Z",
+  "documents": [
+    {
+      "id": "sebi-lodr-2015",
+      "title": "SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+      "authority": "SEBI",
+      "kind": "Regulation",
+      "topics": [
+        "LODR"
+      ],
+      "pages": 230,
+      "chunkCount": 350,
+      "sha256": "f3c187d46aeb15e10d05614400e653086df1799e575ee4e11a49b5d28d5c9b67",
+      "fetchedAt": "2026-08-21T09:33:44.474Z",
+      "sourcePage": "https://www.sebi.gov.in/legal/regulations/jul-2026/securities-and-exchange-board-of-india-listing-obligations-and-disclosure-requirements-regulations-2015-last-amended-on-july-14-2026-_102974.html",
+      "pdfUrl": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf"
+    },
+    {
+      "id": "sebi-pit-regulations-2015",
+      "title": "SEBI (Prohibition of Insider Trading) Regulations, 2015",
+      "authority": "SEBI",
+      "kind": "Regulation",
+      "topics": [
+        "PIT"
+      ],
+      "pages": 82,
+      "chunkCount": 106,
+      "sha256": "3e14632093a11d5ced286205c744c7bec68df9c261cb8dcd6017b477e285f4b1",
+      "fetchedAt": "2026-08-21T09:33:39.933Z",
+      "sourcePage": "https://www.sebi.gov.in/legal/regulations/mar-2025/securities-and-exchange-board-of-india-prohibition-of-insider-trading-regulations-2015-last-amended-on-march-12-2025-_92672.html",
+      "pdfUrl": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf"
+    },
+    {
+      "id": "sebi-sast-2011",
+      "title": "SEBI (Substantial Acquisition of Shares and Takeovers) Regulations, 2011",
+      "authority": "SEBI",
+      "kind": "Regulation",
+      "topics": [
+        "SAST"
+      ],
+      "pages": 79,
+      "chunkCount": 56,
+      "sha256": "f34866984eed83113ed920a7d5194d72972a7c199fdbae7c958aff197f4fc29a",
+      "fetchedAt": "2026-08-21T09:33:47.109Z",
+      "sourcePage": "https://www.sebi.gov.in/legal/regulations/dec-2025/securities-and-exchange-board-of-india-substantial-acquisition-of-shares-and-takeovers-regulations-2011-last-amended-on-december-5-2025-_98643.html",
+      "pdfUrl": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1785911192198.pdf"
+    }
+  ]
+}

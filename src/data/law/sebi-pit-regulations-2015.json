@@ -1,0 +1,868 @@
+{
+ "id": "sebi-pit-regulations-2015",
+ "title": "SEBI (Prohibition of Insider Trading) Regulations, 2015",
+ "authority": "SEBI",
+ "kind": "Regulation",
+ "topics": [
+  "PIT"
+ ],
+ "note": "Consolidated version as published by SEBI, including Schedules A–E.",
+ "sourcePage": "https://www.sebi.gov.in/legal/regulations/mar-2025/securities-and-exchange-board-of-india-prohibition-of-insider-trading-regulations-2015-last-amended-on-march-12-2025-_92672.html",
+ "pdfUrl": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf",
+ "pages": 82,
+ "bytes": 1144648,
+ "sha256": "3e14632093a11d5ced286205c744c7bec68df9c261cb8dcd6017b477e285f4b1",
+ "fetchedAt": "2026-08-21T09:33:39.933Z",
+ "chars": 163625,
+ "chunkCount": 106,
+ "chunks": [
+  {
+   "id": "sebi-pit-regulations-2015#regulation-1",
+   "ref": "Regulation 1",
+   "heading": "Short title and commencement",
+   "chapter": "Chapter I — PRELIMINARY",
+   "page": 1,
+   "text": "1. (1) These regulations may be called the SEBI (Prohibition of Insider Trading)\nRegulations, 2015.\n(2) These regulations shall come into force on the one hundred and twentieth day from the\ndate of its publication in the Official Gazette.\nDefinitions."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-2-p1",
+   "ref": "Regulation 2 (part 1 of 2)",
+   "heading": "Definitions",
+   "chapter": "Chapter I — PRELIMINARY",
+   "page": 1,
+   "text": "2. (1) In these regulations, unless the context otherwise requires, the following words,\nexpressions and derivations therefrom shall have the meanings assigned to them as under:–\n(a) “Act” means the Securities and Exchange Board of India Act, 1992 (15 of 1992);\n(b) “Board” means the Securities and Exchange Board of India;\n(c) “compliance officer” means any senior officer, designated so and reporting to the\nboard of directors or head of the organization in case board is not there, who is\nfinancially literate and is capable of appreciating requirements for legal and regulatory\n\ncompliance under these regulations and who shall be responsible for compliance of\npolicies, procedures, maintenance of records, monitoring adherence to the rules for the\npreservation of unpublished price sensitive information, monitoring of trades and the\nimplementation of the codes specified in these regulations under the overall supervision\nof the board of directors of the listed company or the head of an organization, as the case\nmay be.\n1[Explanation – For the purpose of this regulation, “financially literate” shall mean a\nperson who has the ability to read and understand basic financial statements i.e. balance\nsheet, profit and loss account, and statement of cash flows];\n(d) \"connected person\" means,-\n2[(i) any person who is or has been, during the six months prior to the concerned\nact, associated with a company, in any capacity, directly or indirectly, including\nby reason of frequent communication with its officers or by being in any\ncontractual, fiduciary or employment relationship or by being a director, officer or\nan employee of the company or holds any position including a professional or\nbusiness relationship, whether temporary or permanent, with the company, that\nallows such a person, directly or indirectly, access to unpublished price sensitive\ninformation or is reasonably expected to allow such access.]\n(ii) Without prejudice to the generality of the foregoing, the persons falling within\nthe following categories shall be deemed to be connected persons unless the\ncontrary is established, -\n\n(a). 3[a] relative of connected persons specified in clause (i); or\n(b). a holding company or associate company or subsidiary company; or\n(c). an intermediary as specified in section 12 of the Act or an employee or\ndirector thereof; or\n(d). an investment company, trustee company, asset management company or\nan employee or director thereof; or\n(e). an official of a stock exchange or of clearing house or corporation; or\n(f). a member of board of trustees of a mutual fund or a member of the board\nof directors of the asset management company of a mutual fund or is an\nemployee thereof; or\n(g). a member of the board of directors or an employee, of a public financial\ninstitution as defined in section 2 (72) of the Companies Act, 2013; or\n(h). an official or an employee of a self-regulatory organization recognised or\nauthorized by the Board; or\n(i). a banker of the company; or\n(j). a concern, firm, trust, Hindu undivided family, company or association of\npersons wherein a director of a company or his 4[***] relative or banker of\nthe company, has more than ten per cent. of the holding or interest; 5[or]\n6[(k). a firm or its partner or its employee in which a connected person specified\nin sub-clause (i) of clause (d) is also a partner; or\n(l). a person sharing household or residence with a connected person specified\nin sub-clause (i) of clause (d);]\nNOTE: It is intended that a connected person is one who has a connection with\nthe company that is expected to put him in possession of unpublished price sensitive\n\ninformation. 7[Relatives] and other categories of persons specified above are also\npresumed to be connected persons but such a presumption is a deeming legal fiction and\nis rebuttable. This definition is also intended to bring into its ambit persons who may\n8[***]seemingly 9[not] occupy any position in a company but are in regular touch with\nthe company and its officers and are involved in the know of the company’s operations.\nIt is intended to bring within its ambit those who would have access to or could access\nunpublished price sensitive information about any company or class of companies by\nvirtue of any connection that would put them in possession of unpublished price sensitive\ninformation.\n(e) \"generally available information\" means information that is accessible to the\npublic on a non-discriminatory basis 10[and shall not include unverified event or\ninformation reported in print or electronic media];\nNOTE: It is intended to define what constitutes generally available information so\nthat it is easier to crystallize and appreciate what 11[constitutes] unpublished price\nsensitive information 12[***]. Information published on the website of a stock exchange,\nwould ordinarily be considered generally available.\n(f) “immediate relative” means a spouse of a person, and includes parent, sibling, and\nchild of such person or of the spouse, any of whom is either dependent financially on\nsuch person, or consults such person in taking decisions relating to trading in securities;\n\n13[***]\n(g) \"insider\" means any person who is:\ni) a connected person; or\nii) in possession of or having access to unpublished price sensitive\ninformation;\n14[NOTE: Since \"generally available information\" is defined, it is intended that anyone\nin possession of or having access to unpublished price sensitive information should be\nconsidered as an \"insider\" regardless of the manner in which one came into possession\nof or had access to such information. Various circumstances are provided to enable such\na person to demonstrate that he has not indulged in insider trading. Therefore, this\ndefinition is intended to bring within its reach any person who is in receipt of or has\naccess to unpublished price sensitive information. The onus of showing that a certain\nperson was in possession of or had access to unpublished price sensitive information at\nthe time of trading would, therefore, be on the person leveling the charge after which the\nperson who has traded when in possession of or having access to unpublished price\nsensitive information may demonstrate that he was not in such possession or that he has\nnot traded or he could not access or that his trading when in possession of such\ninformation was squarely covered by the exonerating circumstances.”]\n\n(h) \"promoter\" shall have the meaning assigned to it under the Securities and\nExchange Board of India (Issue of Capital and Disclosure Requirements) Regulations,\n15[2018] or any modification thereof;\n16[(ha) \"promoter group\" shall have the meaning assigned to it under the Securities and\nExchange Board of India (Issue of Capital and Disclosure Requirements) Regulations, 2018 or\nany modification thereof;]\n17[(18[hb]) “proposed to be listed” shall include securities of an unlisted company:\n(i) if such unlisted company has filed offer documents or other documents, as the\ncase may be, with the Board, stock exchange(s) or registrar of companies in\nconnection with the listing; or\n(ii) if such unlisted company is getting listed pursuant to any merger or\namalgamation and has filed a copy of such scheme of merger or amalgamation\nunder the Companies Act, 2013;]\n19[(hc) “relative” shall mean the following:\n(i) spouse of the person;\n(ii) parent of the person and parent of its spouse;\n(iii) sibling of the person and sibling of its spouse;\n(iv) child of the person and child of its spouse;\n(v) spouse of the person listed at sub-clause (iii); and\n(vi) spouse of the person listed at sub-clause (iv)\n\nNOTE: It is intended that the relatives of a “connected person” too become connected\npersons for the purpose of these regulations. It is a rebuttable presumption that a\nconnected person had UPSI.]\n(i) \"securities\" shall have the meaning assigned to it under the Securities Contracts\n(Regulation) Act, 1956 (42 of 1956) or any modification thereof 20[***];\n(j) \"specified\" means specified by the Board in writing;\n(k) “takeover regulations” means the Securities and Exchange Board of India\n(Substantial Acquisition of Shares and Takeovers) Regulations, 2011 and any\namendments thereto;\n(l) \"trading\" means and includes subscribing, 21[redeeming, switching,] buying,\nselling, dealing, or agreeing to subscribe, 22[redeem, switch,] buy, sell, deal in any\nsecurities, and \"trade\" shall be construed accordingly ;\nNOTE: Under the parliamentary mandate, since the Section 12A (e) and Section\n15G of the Act employs the term 'dealing in securities', it is intended to widely define the\nterm “trading” to include dealing. Such a construction is intended to curb the activities\nbased on unpublished price sensitive information which are strictly not buying, selling or\nsubscribing, such as pledging etc when in possession of unpublished price sensitive\ninformation.\n(m) “trading day” means a day on which the recognized stock exchanges are open for\ntrading;\n\n(n) \"unpublished price sensitive information\" means any information, relating to a\ncompany or its securities, directly or indirectly, that is not generally available which upon\nbecoming generally available, is likely to materially affect the price of the securities and\nshall, ordinarily including but not restricted to, information relating to the following: –\n(i) financial results;\n(ii) dividends;\n(iii) change in capital structure;\n(iv) mergers, de-mergers, acquisitions, delistings, disposals and expansion of business\n23[, award or termination of order/contracts not in the normal course of business]\nand such other transactions;\n(v) changes in key managerial personnel 24[, other than due to superannuation or end\nof term, and resignation of a Statutory Auditor or Secretarial Auditor;]\n25[(vi) change in rating(s), other than ESG rating(s);\n(vii) fund raising proposed to be undertaken;\n(viii) agreements, by whatever name called, which may impact the management or\ncontrol of the company;\n(ix) fraud or defaults by the company, its promoter, director, key managerial\npersonnel, or subsidiary or arrest of key managerial personnel, promoter or\ndirector of the company, whether occurred within India or abroad;\n\n(x) resolution plan/ restructuring or one-time settlement in relation to\nloans/borrowings from banks/financial institutions;\n(xi) admission of winding-up petition filed by any party /creditors and admission of\napplication by the Tribunal filed by the corporate applicant or financial creditors\nfor initiation of corporate insolvency resolution process against the company as a\ncorporate debtor, approval of resolution plan or rejection thereof under the\nInsolvency and Bankruptcy Code, 2016;\n(xii) initiation of forensic audit, by whatever name called, by the company or any other\nentity for detecting mis-statement in financials, misappropriation/ siphoning or\ndiversion of funds and receipt of final forensic audit report;\n(xiii) action(s) initiated or orders passed within India or abroad, by any regulatory,\nstatutory, enforcement authority or judicial body against the company or its\ndirectors, key managerial personnel, promoter or subsidiary, in relation to the\ncompany;\n(xiv) outcome of any litigation(s) or dispute(s) which may have an impact on the\ncompany;\n(xv) giving of guarantees or indemnity or becoming a surety, by whatever named\ncalled, for any third party, by the company not in the normal course of business;\n(xvi) granting, withdrawal, surrender, cancellation or suspension of key licenses or\nregulatory approvals.\nExplanation 1- For the purpose of sub-clause (ix):\na. ‘Fraud’ shall have the same meaning as referred to in Regulation 2(1)(c) of\nSecurities and Exchange Board of India (Prohibition of Fraudulent and\nUnfair Trade Practices relating to Securities Market) Regulations, 2003.\n\nb. ‘Default’ shall have the same meaning as referred to in Clause 6 of\nparagraph A of Part A of Schedule III of Securities and Exchange Board of\nIndia (Listing Obligations and Disclosure Requirements) Regulations,\n2015.\nExplanation 2- For identification of events enumerated in this clause as\nunpublished price sensitive information, the guidelines for materiality referred at\nparagraph A of Part A of Schedule III of the Securities and Exchange Board of\nIndia (Listing Obligations and Disclosure Requirements) Regulations, 2015 as\nmay be specified by the Board from time to time and materiality as referred at\nparagraph B of Part A of Schedule III of the Securities and Exchange Board of\nIndia (Listing Obligations and Disclosure Requirements) Regulations, 2015 shall\nbe applicable.]\n26[***].\nNOTE: It is intended that information relating to a company or securities, that is\nnot generally available would be unpublished price sensitive information if it is likely to\nmaterially affect the price upon coming into the public domain. The types of matters that\nwould ordinarily give rise to unpublished price sensitive information have been listed\nabove to give illustrative guidance of unpublished price sensitive information."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-2-p2",
+   "ref": "Regulation 2 (part 2 of 2)",
+   "heading": "Definitions",
+   "chapter": "Chapter I — PRELIMINARY",
+   "page": 1,
+   "text": "(2) Words and expressions used and not defined in these regulations but defined in the\nSecurities and Exchange Board of India Act, 1992 (15 of 1992), the Securities Contracts\n(Regulation) Act, 1956 (42 of 1956), the Depositories Act, 1996 (22 of 1996) or the Companies\nAct, 2013 (18 of 2013) and rules and regulations made thereunder shall have the meanings\nrespectively assigned to them in those legislation.\n\nRESTRICTIONS ON COMMUNICATION AND TRADING BY INSIDERS\nCommunication or procurement of unpublished price sensitive information."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-3-p1",
+   "ref": "Regulation 3 (part 1 of 2)",
+   "heading": "Communication or procurement of unpublished price sensitive information",
+   "chapter": "Chapter II",
+   "page": 10,
+   "text": "3. (1) No insider shall communicate, provide, or allow access to any unpublished price\nsensitive information, relating to a company or securities listed or proposed to be listed, to any\nperson including other insiders except where such communication is in furtherance of legitimate\npurposes, performance of duties or discharge of legal obligations.\nNOTE: This provision is intended to cast an obligation on all insiders who are essentially\npersons in possession of unpublished price sensitive information to handle such information with\ncare and to deal with the information with them when transacting their business strictly on a\nneed-to-know basis. It is also intended to lead to organisations developing practices based on\nneed-to-know principles for treatment of information in their possession.\n(2) No person shall procure from or cause the communication by any insider of unpublished\nprice sensitive information, relating to a company or securities listed or proposed to be listed,\nexcept in furtherance of legitimate purposes, performance of duties or discharge of legal\nobligations.\nNOTE: This provision is intended to impose a prohibition on unlawfully procuring\npossession of unpublished price sensitive information. Inducement and procurement of\nunpublished price sensitive information not in furtherance of one’s legitimate duties and\ndischarge of obligations would be illegal under this provision.\n27[(2A) The board of directors of a listed company shall make a policy for determination\nof “legitimate purposes” as a part of “Codes of Fair Disclosure and Conduct” formulated under\nregulation 8.\n\nExplanation – For the purpose of illustration, the term “legitimate purpose” shall include sharing\nof unpublished price sensitive information in the ordinary course of business by an insider with\npartners, collaborators, lenders, customers, suppliers, merchant bankers, legal advisors, auditors,\ninsolvency professionals or other advisors or consultants, provided that such sharing has not been\ncarried out to evade or circumvent the prohibitions of these regulations.]\n28[(2B) Any person in receipt of unpublished price sensitive information pursuant to a\n“legitimate purpose” shall be considered an “insider” for purposes of these regulations and due\nnotice shall be given to such persons to maintain confidentiality of such unpublished price\nsensitive information in compliance with these regulations.]\n(3) Notwithstanding anything contained in this regulation, an unpublished price sensitive\ninformation may be communicated, provided, allowed access to or procured, in connection with\na transaction that would:–\n(i) entail an obligation to make an open offer under the takeover regulations where\nthe board of directors of the 29[listed] company is of informed opinion that 30[sharing of\nsuch information] is in the best interests of the company;\nNOTE: It is intended to acknowledge the necessity of communicating, providing,\nallowing access to or procuring UPSI for substantial transactions such as takeovers,\nmergers and acquisitions involving trading in securities and change of control to assess a\npotential investment. In an open offer under the takeover regulations, not only would the\nsame price be made available to all shareholders of the company but also all information\nnecessary to enable an informed divestment or retention decision by the public\nshareholders is required to be made available to all shareholders in the letter of offer\nunder those regulations.\n\n(ii) not attract the obligation to make an open offer under the takeover regulations but\nwhere the board of directors of the 31[listed] company is of informed opinion 32[that\nsharing of such information] is in the best interests of the company and the information\nthat constitute unpublished price sensitive information is disseminated to be made\ngenerally available at least two trading days prior to the proposed transaction being\neffected in such form as the board of directors may determine 33[to be adequate and fair\nto cover all relevant and material facts].\nNOTE: It is intended to permit communicating, providing, allowing access to or\nprocuring UPSI also in transactions that do not entail an open offer obligation under the\ntakeover regulations 34[when authorised by the board of directors if sharing of such\ninformation] is in the best interests of the company. The board of directors, however,\nwould cause public disclosures of such unpublished price sensitive information well\nbefore the proposed transaction to rule out any information asymmetry in the market."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-3-p2",
+   "ref": "Regulation 3 (part 2 of 2)",
+   "heading": "Communication or procurement of unpublished price sensitive information",
+   "chapter": "Chapter II",
+   "page": 10,
+   "text": "(4) For purposes of sub-regulation (3), the board of directors shall require the parties to\nexecute agreements to contract confidentiality and non-disclosure obligations on the part of such\nparties and such parties shall keep information so received confidential, except for the purpose of\nsub-regulation (3), and shall not otherwise trade in securities of the company when in possession\nof unpublished price sensitive information.\n35[(5) The board of directors or head(s) of the organisation of every person required to handle\nunpublished price sensitive information shall ensure that a structured digital database is\n\nmaintained containing the nature of unpublished price sensitive information and the names of\nsuch persons who have shared the information and also the names of such persons with whom\ninformation is shared under this regulation along with the Permanent Account Number or any\nother identifier authorized by law where Permanent Account Number is not available. Such\ndatabase shall not be outsourced and shall be maintained internally with adequate internal\ncontrols and checks such as time stamping and audit trails to ensure non-tampering of the\ndatabase.]\n36[Provided that entry of information, not emanating from within the organisation, in structured\ndigital database may be done not later than 2 calendar days from the receipt of such information.]\n37[(6) The board of directors or head(s) of the organisation of every person required to handle\nunpublished price sensitive information shall ensure that the structured digital database is\npreserved for a period of not less than eight years after completion of the relevant transactions\nand in the event of receipt of any information from the Board regarding any investigation or\nenforcement proceedings, the relevant information in the structured digital database shall be\npreserved till the completion of such proceedings.]\nTrading when in possession of unpublished price sensitive information."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-4-p1",
+   "ref": "Regulation 4 (part 1 of 2)",
+   "heading": "Trading when in possession of unpublished price sensitive information",
+   "chapter": "Chapter II",
+   "page": 13,
+   "text": "4. (1) No insider shall trade in securities that are listed or proposed to be listed on a\nstock exchange when in possession of unpublished price sensitive information:\n“The board of directors shall ensure that a structured digital database is maintained containing the names of such\npersons or entities as the case may be with whom information is shared under this regulation along with the\nPermanent Account Number or any other identifier authorized by law where Permanent Account Number is not\navailable. Such databases shall be maintained with adequate internal controls and checks such as time stamping and\naudit trails to ensure non-tampering of the database.”\nEarlier, sub-regulation 5 was inserted by Securities and Exchange Board of India (Prohibition of Insider Trading)\n(Amendment) Regulations, 2018 (w.e.f. April 01, 2019).\n\n38[Explanation –When a person who has traded in securities has been in possession of\nunpublished price sensitive information, his trades would be presumed to have been motivated\nby the knowledge and awareness of such information in his possession.]\nProvided that the insider may prove his innocence by demonstrating the circumstances\nincluding the following: –\n(i) the transaction is an off-market inter-se transfer between 39[insiders] who were in\npossession of the same unpublished price sensitive information without being in breach\nof regulation 3 and both parties had made a conscious and informed trade decision.\n40[Provided that such unpublished price sensitive information was not obtained under\nsub-regulation (3) of regulation 3 of these regulations.\nProvided further that such off-market trades shall be reported by the insiders to the\ncompany within two working days. Every company shall notify the particulars of such\ntrades to the stock exchange on which the securities are listed within two trading days\nfrom receipt of the disclosure or from becoming aware of such information.];\n41[(ii) the transaction was carried out through the block deal window mechanism between\npersons who were in possession of the unpublished price sensitive information without\nbeing in breach of regulation 3 and both parties had made a conscious and informed trade\ndecision;\nProvided that such unpublished price sensitive information was not obtained by either\nperson under sub-regulation (3) of regulation 3 of these regulations.\n\n(iii) the transaction in question was carried out pursuant to a statutory or regulatory\nobligation to carry out a bona fide transaction.\n(iv) the transaction in question was undertaken pursuant to the exercise of stock options\nin respect of which the exercise price was pre-determined in compliance with applicable\nregulations.]\n(v) in the case of non-individual insiders: –\n(a) the individuals who were in possession of such unpublished price sensitive\ninformation were different from the individuals taking trading decisions and such\ndecision-making individuals were not in possession of such unpublished price\nsensitive information when they took the decision to trade; and\n(b) appropriate and adequate arrangements were in place to ensure that these\nregulations are not violated and no unpublished price sensitive information was\ncommunicated by the individuals possessing the information to the individuals\ntaking trading decisions and there is no evidence of such arrangements having\nbeen breached;\n(vi) the trades were pursuant to a trading plan set up in accordance with regulation 5.\nNOTE: When a person who has traded in securities has been in possession of\nunpublished price sensitive information, his trades would be presumed to have been\nmotivated by the knowledge and awareness of such information in his possession. The\nreasons for which he trades or the purposes to which he applies the proceeds of the\ntransactions are not intended to be relevant for determining whether a person has\nviolated the regulation. He traded when in possession of unpublished price sensitive\ninformation is what would need to be demonstrated at the outset to bring a charge. Once\nthis is established, it would be open to the insider to prove his innocence by\n\ndemonstrating the circumstances mentioned in the proviso, failing which he would have\nviolated the prohibition."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-4-p2",
+   "ref": "Regulation 4 (part 2 of 2)",
+   "heading": "Trading when in possession of unpublished price sensitive information",
+   "chapter": "Chapter II",
+   "page": 13,
+   "text": "(2) In the case of connected persons the onus of establishing, that they were not in possession\nof unpublished price sensitive information, shall be on such connected persons and in other\ncases, the onus would be on the Board.\n(3) The Board may specify such standards and requirements, from time to time, as it may\ndeem necessary for the purpose of these regulations.\nTrading Plans."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5-p1",
+   "ref": "Regulation 5 (part 1 of 3)",
+   "heading": "Trading Plans",
+   "chapter": "Chapter II",
+   "page": 16,
+   "text": "5. (1) An insider shall be entitled to formulate a trading plan and present it to the\ncompliance officer for approval and public disclosure pursuant to which trades may be carried\nout on his behalf in accordance with such plan.\nNOTE: This provision intends to give an option to persons who may be perpetually in\npossession of unpublished price sensitive information and enabling them to trade in securities in\na compliant manner. This provision would enable the formulation of a trading plan by an\ninsider to enable him to plan for trades to be executed in future. By doing so, the possession of\nunpublished price sensitive information when a trade under a trading plan is actually executed\nwould not prohibit the execution of such trades that he had pre-decided even before the\nunpublished price sensitive information came into being.\n(2) Such trading plan shall: –\n(i) not entail commencement of trading on behalf of the insider earlier than 42[one\nhundred and twenty calendar days] from the public disclosure of the plan;\n\nNOTE: It is intended that to get the benefit of a trading plan, a cool-off period of\n43[one hundred and twenty calendar days] is necessary. 44[Companies declare their\nresults quarterly and there exists a trading restriction, in terms of these Regulations,\nfrom quarter end to two days after declaration of quarterly result, which, it is seen, is\ngenerally a period of around one month for most companies. Thus, one hundred and\ntwenty calendar days] period is considered reasonably long for unpublished price\nsensitive information that is in possession of the insider when formulating the trading\nplan, to become generally available. It is also considered to be a reasonable period for a\ntime lag in which new unpublished price sensitive information may come into being\nwithout adversely affecting the trading plan formulated earlier. In any case, it should be\nremembered that this is only a statutory cool-off period and would not grant immunity\nfrom action if the insider were to be in possession of the same unpublished price sensitive\ninformation both at the time of formulation of the plan and implementation of the same.\n(ii) 45[***]\n(iii) 46[***]\n\n(iv) not entail overlap of any period for which another trading plan is already in\nexistence;\nNOTE: It is intended that it would be undesirable to have multiple trading plans\noperating during the same time period. Since it would be possible for an insider to time\nthe publication of the unpublished price sensitive information to make it generally\navailable instead of timing the trades, it is important not to have the ability to initiate\nmore than one plan covering the same time period.\n(v) 47[set out following parameters for each trade to be executed:\n(i) either the value of trade to be effected or the number of securities to be\ntraded;\n(ii) nature of the trade;\n(iii) either specific date or time period not exceeding five consecutive\ntrading days;\n(iv) price limit, that is an upper price limit for a buy trade and a lower price\nlimit for a sell trade, subject to the range as specified below:\na. for a buy trade: the upper price limit shall be between the\nclosing price on the day before submission of the trading plan\nand upto twenty per cent higher than such closing price;\nb. for a sell trade: the lower price limit shall be between the closing\nprice on the day before submission of the trading plan and upto\ntwenty per cent lower than such closing price.\nExplanation:\n(i) While the parameters in sub-clauses (i), (ii) and (iii) shall be\nmandatorily mentioned for each trade, the parameter in sub-clause\n(iv) shall be optional.\n(ii) The price limit in sub-clause (iv) shall be rounded off to the nearest\nnumeral.\n(iii) Insider may make adjustments, with the approval of the compliance\nofficer, in the number of securities and price limit in the event of\ncorporate actions related to bonus issue and stock split occurring\n\nafter the approval of trading plan and the same shall be notified on\nthe stock exchanges on which securities are listed.]\nNOTE: It is intended that while regulations should not be too prescriptive and\nrigid about what a trading plan should entail, they should stipulate certain basic\nparameters that a trading plan should conform to and within which, the plan may be\nformulated with full flexibility. The nature of the trades entailed in the trading plan i.e.\nacquisition or disposal should be set out. The trading plan may set out the value of\nsecurities or the number of securities to be invested or divested. Specific dates or specific\ntime 48[period] may be set out in the plan. 49[However, there should be an outer limit on\nthe duration of the time period, so that while it allows the insider to split their trades\nacross different dates, duration should not be so long that it is prone to misuse.\nFurther, to protect the insider from unexpected price movements, he may, at the time of\nformulation of trading plan, provide price limits within the range specified in these\nRegulations.]\n(vi) not entail trading in securities for market abuse.\nNOTE: Trading on the basis of such a trading plan would not grant absolute immunity\nfrom bringing proceedings for market abuse. For instance, in the event of manipulative\ntiming of the release of unpublished price sensitive information to ensure that trading\nunder a trading plan becomes lucrative in circumvention of regulation 4 being detected,\nit would be open to initiate proceedings for alleged breach of SEBI (Prohibition of\nFraudulent and Unfair Trade Practices Relating to the Securities Market) Regulations,\n2003."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5-p2",
+   "ref": "Regulation 5 (part 2 of 3)",
+   "heading": "Trading Plans",
+   "chapter": "Chapter II",
+   "page": 16,
+   "text": "(3) The compliance officer shall review the trading plan to assess whether the plan would\nhave any potential for violation of these regulations and shall be entitled to seek such express\n\nundertakings as may be necessary to enable such assessment and to approve and monitor the\nimplementation of the plan.\n50[Provided that pre-clearance of trades shall not be required for a trade executed as per an\napproved trading plan.\nProvided further that trading window norms 51[***] shall not be applicable for trades carried out\nin accordance with an approved trading plan.]\nNOTE: It is intended that the compliance officer would have to review and approve the\nplan. For doing so, he may need the insider to declare that he is not in possession of\nunpublished price sensitive information or that he would ensure that any unpublished price\nsensitive information in his possession becomes generally available before he commences\nexecuting his trades. Once satisfied, he may approve the trading plan, which would then have to\nbe implemented in accordance with these regulations.\n(4) The trading plan once approved shall be irrevocable and the insider shall mandatorily\nhave to implement the plan, without being entitled to either 52[***] execute any trade in the\nsecurities outside the scope of the trading plan 53[or to deviate from it except due to permanent\nincapacity or bankruptcy or operation of law].\nProvided that the implementation of the trading plan shall not be commenced if any unpublished\nprice sensitive information in possession of the insider at the time of formulation of the plan has\nnot become generally available at the time of the commencement of implementation 54[***].\n\n55[Provided further that if the insider has set a price limit for a trade under sub-clause (iv) of\nclause (v) of sub-regulation 2, the insider shall execute the trade only if the execution price of the\nsecurity is within such limit. If price of the security is outside the price limit set by the insider,\nthe trade shall not be executed.\nExplanation: In case of non-implementation (full/partial) of trading plan due to either reasons\nenumerated in sub-regulation 4 or failure of execution of trade due to inadequate liquidity in the\nscrip, the following procedure shall be adopted:\n(i) The insider shall intimate non-implementation (full/partial) of trading plan to the\ncompliance officer within two trading days of end of tenure of the trading plan with reasons\nthereof and supporting documents, if any.\n(ii)Upon receipt of information from the insider, the compliance officer, shall place such\ninformation along with his recommendation to accept or reject the submissions of the\ninsider, before the Audit Committee in the immediate next meeting. The Audit Committee\nshall decide whether such non-implementation (full/partial) was bona fide or not.\n(iii) The decision of the Audit Committee shall be notified by the compliance officer\non the same day to the stock exchanges on which the securities are listed.\n(iv) In case the Audit Committee does not accept the submissions made by the insider,\nthen the compliance officer shall take action as per the Code of Conduct.]\nNOTE: It is intended that since the trading plan is an exception to the general rule that an\ninsider should not trade when in possession of unpublished price sensitive information, changing\nthe plan or trading outside the same would negate the intent behind the exception. Other\ninvestors in the market, too, would factor the impact of the trading plan on their own trading\ndecisions and in price discovery. Therefore, it is not fair or desirable to permit the insider to\n“and in such event the compliance officer shall confirm that the commencement ought to be deferred until such\nunpublished price sensitive information becomes generally available information so as to avoid a violation of sub-\nregulation (1) of regulation 4”.\n\ndeviate from the trading plan based on which others in the market have assessed their views on\nthe securities 56[except in situations beyond the control of the insider].\nThe 57[first] proviso is intended to address the prospect that despite the 58[one hundred and\ntwenty calendar days] gap between the formulation of the trading plan and its commencement,\nthe unpublished price sensitive information in possession of the insider is still not generally\navailable. In such a situation, commencement of the plan would conflict with the over-riding\nprinciple that trades should not be executed when in possession of such information. If the very\nsame unpublished price sensitive information is still in the insider’s possession, the 59[execution\nof the trading plan should not be commenced].\n60[The second proviso is intended to address the scenario where the insider has set a price limit\nfor a trade and due to adverse fluctuation in market prices, the price of the security is outside the\nprice limit set by the insider, the trade shall not be executed. However, if the insider wishes to\ntrade irrespective of the fluctuation in market price, he may not set any price limit at the time of\nformulation of the trading plan.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5-p3",
+   "ref": "Regulation 5 (part 3 of 3)",
+   "heading": "Trading Plans",
+   "chapter": "Chapter II",
+   "page": 16,
+   "text": "(5) 61[The compliance officer shall approve or reject the trading plan within two trading days\nof receipt of the trading plan and notify the approved plan to the stock exchanges on which the\nsecurities are listed, on the day of approval.]\n\nNOTE: It is intended that given the material exception to the prohibitory rule in\nregulation 4, a trading plan is required to be publicly disseminated. Investors in the market at\nlarge would also factor the potential pointers in the trading plan in their own assessment of the\nsecurities and price discovery for them on the premise of how the insiders perceive the prospects\nor approach the securities in their trading plan.\n62[CHAPTER – II A\nRESTRICTIONS ON COMMUNICATION IN RELATION TO AND TRADING BY\nINSIDERS IN THE UNITS OF MUTUAL FUNDS."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5a",
+   "ref": "Regulation 5A",
+   "heading": "Applicability",
+   "chapter": "Chapter II",
+   "page": 23,
+   "text": "5A. (1) The provisions of this Chapter shall apply only in relation to the units of a mutual\nfund.\n(2) All the provisions of Chapter IIIA and V shall also apply in relation to the units of a\nmutual fund.\nDefinitions."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5b",
+   "ref": "Regulation 5B",
+   "heading": "Definitions",
+   "chapter": "Chapter II",
+   "page": 23,
+   "text": "5B.(1) For the purpose of this Chapter,\n(a) “associate” shall have the same meaning assigned to it under the Securities and\nExchange Board of India (Mutual funds) Regulations, 1996;\n(b)\"connected person\" shall mean:\n(i) any person who is or has during the two months prior to the concerned act\nbeen associated with the mutual fund, asset management company and trustees,\ndirectly or indirectly, in any capacity including by reason of frequent\ncommunication with its officers or by being in any contractual, fiduciary or\nemployment relationship or by being a director, officer or employee of the\nasset management company and trustee or holds any position including a\nprofessional or business relationship with the mutual fund or asset management\ncompany or the trustees, whether temporary or permanent, that allows such a\n\nperson, direct or indirect access to unpublished price sensitive information or is\nreasonably expected to allow such access;\n(ii) Without prejudice to the generality of the foregoing, the persons falling\nwithin the following categories shall be deemed to be connected persons unless\nthe contrary is established,\n(a) an immediate relative of connected persons specified in clause (i); or\n(b) Sponsor, holding company or associate company or subsidiary\ncompany of the Sponsor or Asset management company and Trustees; or\n(c) Board of Directors and key management personnel of sponsor of the\nmutual fund;or\n(d) Directors or employees of registrar and share transfer agents,\ncustodians or valuation agencies of the mutual fund who have access or are\nreasonably expected to have access to unpublished price sensitive\ninformation relating to a mutual fund scheme or its units in the course of\nbusiness operations; or\n(e) an official or an employee of fund accountant providing services to a\nmutual fund who have access or are reasonably expected to have access to\nunpublished price sensitive information relating to a mutual fund scheme\nor its units in the course of business operations; or\n(f) an official or an employee of a self-regulatory organization recognised\nor authorized by the Board; or\n(g) an official of a stock exchange for dissemination of information; or\n(h) Directors or employees of auditor, legal advisor or consultants of the\nmutual fund or asset management company who have access or are\nreasonably expected to have access to unpublished price sensitive\ninformation relating to a mutual fund scheme or its units in the course of\nbusiness operation; or\n(i) an intermediary as specified in section 12 of the Act or an employee or\ndirector thereof who have access or are reasonably expected to have access\n\nto unpublished price sensitive information relating to a mutual fund\nscheme or its units in the course of business operations; or\n(j) a banker of the mutual fund or asset management company; or\n(k) a concern, firm, trust, HUF, company or association of persons wherein\na director of an asset management company and Trustees or his immediate\nrelative or banker of the company, has more than ten per cent of the\nholding or interest;\n(c) \"generally available information\" means information that is made available\nto the unitholders or made accessible to the public on a non-discriminatory\nbasis;\nNOTE: Generally available information is intended to be defined to crystallize\nand appreciate its meaning. Information published on the website of a\nstock exchange would ordinarily be considered generally available.\nExplanation : The asset management companies/trustees shall immediately\ndisseminate all material information on the platform of the stock exchange or\nin any other manner as may be specified by the Board, whenever the same\nneeds to be communicated to the unitholders or a public notice needs to be\nmade;\n(d) “insider” means any person who is:\ni. a connected person; or\nii.in possession of or having access to unpublished price sensitive information\npertaining to a scheme;\n(e) \"systematic transactions” in the units of mutual fund are those transactions\nwhich are automatically triggered for execution on a periodic basis as instructed\nby the investor including Systematic Investment Plans, Systematic Transfer\nPlans or Systematic Withdrawal Plans;\n\n(f) “unpublished price sensitive information\" shall mean any information, pertaining\nto a scheme of a mutual fund which is not yet generally available and which\nupon becoming generally available, is likely to materially impact the net asset\nvalue or materially affect the interest of unit holders and shall include the\ninstances where there is a likelihood of:\ni. a change in the accounting policy;\nii. a material change in the valuation of any asset or class of assets;\niii. restrictions on redemptions, winding up of scheme(s);\niv. creation of segregated portfolio;\nv. the triggering of the swing pricing framework and the applicability of the\nswing factor;\nvi. material change in the liquidity position of the concerned mutual fund\nscheme(s);\nvii. default in the underlying securities which is material to the concerned mutual\nfund scheme(s).\nNote: All other definitions in Chapter-I shall mutatis mutandis be applicable to\ntransactions in the units of mutual funds.\nCommunication or procurement of unpublished price sensitive information and\nmaintenance of a structured digital data base."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5c",
+   "ref": "Regulation 5C",
+   "heading": "",
+   "chapter": "Chapter II",
+   "page": 26,
+   "text": "5C. (1) No insider shall communicate, provide, or allow access to any unpublished price\nsensitive information to any person including other insiders except where such\ncommunication is in furtherance of legitimate purposes, performance of duties or discharge\nof legal obligations.\nNOTE: This provision is intended to cast an obligation on all insiders who are\nessentially persons in possession of unpublished price sensitive information to handle such\ninformation with care and to deal with the information with them when transacting their\nbusiness strictly on a need-to-know basis. It is also intended to lead to organisations\ndeveloping practices based on need-to-know principles for treatment of information in their\npossession.\n\n(2) No person shall procure from or cause the communication by any insider of\nunpublished price sensitive information, except in furtherance of legitimate purposes,\nperformance of duties or discharge of legal obligations.\nNOTE: This provision is intended to impose a prohibition on unlawfully procuring\npossession of unpublished price sensitive information. Inducement and procurement of\nunpublished price sensitive information not in furtherance of one’s legitimate duties and\ndischarge of obligations would be illegal under this provision.\n(3) The board of directors of an asset management company with the approval of the\nTrustees shall make a policy for determination of “legitimate purposes”.\nExplanation – For the purpose of illustration, the term “legitimate purpose” shall include\nsharing of unpublished price sensitive information in the ordinary course of business by an\ninsider with Trustees, Registrars and Share Transfer Agents, Custodians, Valuation\nAgencies, Fund Accountants, Association of Mutual funds of India, Credit Rating\nAgencies, legal advisors, auditors or other advisors or consultants, except where such\nsharing has been carried out to evade or circumvent the prohibitions of these regulations.\n(4) Any person in receipt of unpublished price sensitive information pursuant to a\n“legitimate purpose” shall be considered an “insider” for purposes of this chapter and due\nnotice shall be given to such persons to maintain confidentiality of such unpublished price\nsensitive information in compliance with these regulations.\n(5) For the purpose of sub-regulation (4), the board of directors of an asset management\ncompany shall require the parties to execute agreements to contract confidentiality and\nnon-disclosure obligations on the part of such parties and such parties shall keep\ninformation so received confidential, except for the purpose specified herein and shall not\notherwise deal in the units of a mutual fund when in possession of unpublished price\nsensitive information.\n\n(6) The board of directors or head(s) of the organisation of every person required to handle\nunpublished price sensitive information shall ensure that a structured digital database is\nmaintained containing the nature of unpublished price sensitive information and the names\nof such persons who have shared the information and also the names of such persons with\nwhom information is shared under this regulation along with the Permanent Account\nNumber or any other identifier authorized by law where Permanent Account Number is not\navailable. Such database shall not be outsourced and shall be maintained internally with\nadequate internal controls and checks such as time stamping and audit trails to ensure non-\ntampering of the database.\n(7) The board of directors or head(s) of the organisation of every person required to handle\nunpublished price sensitive information shall ensure that the structured digital database is\npreserved for a period of not less than eight years after completion of the relevant\ntransactions and in the event of receipt of any information from the Board regarding any\ninvestigation or enforcement proceedings, the relevant information in the structured digital\ndatabase shall be preserved till the completion of such proceedings\nTrading when in possession of unpublished price sensitive information."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5d",
+   "ref": "Regulation 5D",
+   "heading": "Trading when in possession of unpublished price sensitive information",
+   "chapter": "Chapter II",
+   "page": 28,
+   "text": "5D. (1) No insider shall trade in the units of a scheme of a mutual fund, when in possession\nof unpublished price sensitive information, which may have a material impact on the net\nasset value of a scheme or may have a material impact on the interest of the unit holders of\nthe scheme:\nExplanation –The dealings of a person in the units of a mutual fund when in possession of\nunpublished price sensitive information, shall be presumed to have been motivated by the\nknowledge and awareness of such information in his possession:\nProvided that the insider may prove his innocence by demonstrating the circumstances\nincluding the following: –\n(i) the transaction is an off-market inter-se transfer between insiders who were in\n\npossession of the same unpublished price sensitive information and both parties had\nmade a conscious and informed trade decision:\nProvided that such off-market trades shall be reported by the insiders to the\nasset management company within two working days. Every asset management\ncompany shall notify the particulars of such trades to the stock exchange or\nin any other manner as may be specified by the Board within two trading days\nfrom receipt of the disclosure or from becoming aware of such information;\n(ii) such transaction in question was carried out pursuant to a statutory or regulatory\nobligation including subscription or investment in mutual fund units pursuant to the\nmandatory requirement specified by the Board for “Alignment of interest of\nDesignated Employees of asset management companies with the Unit holders of the\nmutual fund schemes”;\n(iii) such transaction in question is triggered by systematic transactions, where such\nsystematic transactions are registered at least two months prior to such transaction;\n(iv) such transaction in question is triggered by irrevocable trading plans, where such\nplan has been approved by the Compliance Officer and disclosed on the Stock\nExchange platform or in any other manner as may be specified by the Board, at\nleast sixty days before the commencement of trades:\nProvided that the trading period for each plan shall be at least six months with no\noverlapping of different trading plans:\nProvided further that for the trading as per the approved plan, no requirements/\nnorms related to pre-clearance of trading or closure period or contra trade shall be\napplicable.\n(2) In the case of connected persons, the onus of establishing that they were not in\npossession of unpublished price sensitive information, shall be on such connected persons\nand in other cases, the onus would be on the Board."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5e",
+   "ref": "Regulation 5E",
+   "heading": "Disclosures by certain persons",
+   "chapter": "Chapter II",
+   "page": 30,
+   "text": "5E. (1) An asset management company shall, on such date as may be specified by the\nBoard and on a quarterly basis thereafter, disclose the details of holdings in the units of its\nmutual fund schemes, on an aggregated basis, held by the Designated Persons of asset\nmanagement company, trustees and their immediate relatives on the platform of Stock\nExchanges or in any other manner as may be specified by the Board.\n(2) Details of all the transactions in the units of its own mutual funds, above such\nthresholds as may be specified by the Board, executed by the Designated Persons of asset\nmanagement company, trustees and their immediate relatives shall be reported by the\nconcerned person to the Compliance Officer of asset management company within two\nbusiness days from the date of transaction:\nProvided that with respect to systematic transactions through any mutual fund scheme,\nDesignated Persons may report the same only at the time of making the first installment of\nthe transaction along with the period of such transaction and on modifications thereof, if\nany:\nProvided further that no reporting is required if such transaction was pursuant to\na. subscription/investment in the mutual fund units pursuant to mandatory requirement\nspecified by Board for “Alignment of interest of Key Employees (‘Designated\nEmployees’) of Asset Management Companies with the Unitholders of the mutual\nfund Schemes” or otherwise, where separate records are maintained by the Asset\nmanagement company in this regard. Such transactions may be governed by\nCirculars/guidelines issued by the Board from time to time;\nb. Any trading in overnight schemes, Index funds and Exchange Traded Funds.\n(3) Transactions mentioned in sub-regulation (2), shall be disclosed by the asset\nmanagement company on Stock Exchange or any other manner as may be specified by the\nBoard within two business days of receipt of the same.\n\n(4) The above disclosures shall be made in such form and such manner as may be\nspecified by the Board from time to time."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5f",
+   "ref": "Regulation 5F",
+   "heading": "Code of Conduct",
+   "chapter": "Chapter II",
+   "page": 31,
+   "text": "5F. (1) The board of directors of every asset management company shall ensure that the\nchief executive officer or managing director shall formulate a code of conduct with their\napproval to regulate, monitor and report dealings in mutual fund units by the Designated\nPersons and immediate relatives of the Designated Persons towards achieving compliance\nwith these regulations and , adopting the minimum standards set out in Schedule B1 to\nthese regulations, without diluting the provisions of these regulations in any manner.\n(2) The board of directors or head(s) of the organisation, of every other person who is\nrequired to handle unpublished price sensitive information relating to a mutual fund\nscheme or its units in the course of business operations shall formulate a code of conduct to\nregulate, monitor and report trading by their Designated Persons and immediate relative of\nDesignated Persons towards achieving compliance with these regulations, adopting the\nminimum standards set out in Schedule C to these regulations, without diluting the\nprovisions of these regulations in any manner.\nExplanation - Professional firms such as auditors, accountancy firms, law firms, analysts,\nconsultants, banks, valuation agencies, fund accountants, assisting or advising Asset\nManagement Companies, Trustees, Registrars and share transfer agents, Custodians and\nCredit Rating Agencies shall be collectively referred to as “fiduciaries” for the purpose of\nSchedule C of these regulations.\n(3) Every asset management company, intermediary and other persons formulating a code\nof conduct shall identify and designate a compliance officer to administer the code of\nconduct and other requirements under these regulations.\nDesignated Person"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5g",
+   "ref": "Regulation 5G",
+   "heading": "",
+   "chapter": "Chapter II",
+   "page": 32,
+   "text": "5G. (1)The board of directors of the asset management company and trustees shall in\nconsultation with the compliance officer specify the Designated Persons to be covered by\nthe code of conduct on the basis of their role and function in the organisation and the\naccess that such role and function would provide to unpublished price sensitive\ninformation in addition to seniority and professional designation and shall include:\ni. Head of the asset management company (designated as Chief Executive\nOfficer/Managing Director/President or by any other name),\nii. Directors of the asset management company or the trustee company,\niii. Chief Investment Officer, Chief Risk Officer, Chief Operation Officer, Chief\nInformation Security Officer, Fund Managers, Dealers, Research Analysts, all\nemployees in the Fund Operations Department, Compliance Officer and Heads\nof all divisions and/or departments or any other employee as designated by the\nasset management company and/or trustees.\nExplanation :Non-Executive Directors of the asset management company/trustee\ncompany or trustees who are in possession of / have access to any “unpublished\nprice sensitive information\" , shall also be deemed to be Designated Persons.\n(2) Every other Intermediary and other persons shall in consultation with the compliance\nofficer specify the Designated Persons to be covered by the code of conduct on the basis of\ntheir role and function in the organisation and the access that such role and function would\nprovide to unpublished price sensitive information in addition to seniority and professional\ndesignation\nInstitutional Mechanism for Prevention of Insider trading."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-5h",
+   "ref": "Regulation 5H",
+   "heading": "Institutional Mechanism for Prevention of Insider trading",
+   "chapter": "Chapter II",
+   "page": 32,
+   "text": "5H. (1) The Chief Executive Officer / Managing Director of an asset management\ncompany with the approval of the trustee or such other analogous person of an\nintermediary or fiduciary, shall put in place adequate and effective system of internal\ncontrols to ensure compliance with the requirements given in these regulations to prevent\ninsider trading. These internal controls shall include the following:\n(a). All employees who have access to unpublished price sensitive information are\n\nidentified as Designated Persons;\n(b). All the unpublished price sensitive information shall be identified and its\nconfidentiality shall be maintained as per the requirements of these regulations;\n(c). Adequate restrictions shall be placed on communication or procurement of\nunpublished price sensitive information as required by these regulations;\n(d). Lists of all employees and other persons with whom unpublished price sensitive\ninformation is shared shall be maintained and confidentiality agreements shall be\nsigned or notice shall be served to all such employees and persons;\n(e). Periodic process review to evaluate effectiveness of such internal controls;\n(f). Compliance of all other relevant requirements specified under these regulations.\n(2) The board of directors of an asset management company and the board of\ndirectors or head(s) of the organisation of intermediaries and fiduciaries, shall also ensure\nthat the Chief Executive Officer or the Managing Director or such other analogous person\ncomplies with these regulations.\n(3) The Audit Committee of an asset management company or such other analogous\nbody of an intermediary or fiduciary shall review compliance with the provisions of these\nregulations at least once in a financial year and shall verify that the systems for internal\ncontrol are adequate and are operating effectively.\n(4) Every asset management company shall with the approval of the trustees\nformulate written policies and procedures for inquiry in case of leak of unpublished price\nsensitive information or suspected leak of unpublished price sensitive information and\naccordingly initiate appropriate inquiries on such leak of unpublished price sensitive\ninformation or suspected leak of unpublished price sensitive information and promptly\ninform the Board promptly of such leaks, inquiries and result of such inquiries.\n(5) An asset management company shall with the approval of the trustees have a\nwhistle-blower policy that is brought to the notice of their employees to enable them to\nreport instances of leak of such unpublished price sensitive information .\n\n(6) In case an inquiry has been initiated by an asset management company/ trustees\nin case of leak of unpublished price sensitive information or suspected leak of unpublished\nprice sensitive information, the relevant intermediaries and fiduciaries shall co-operate\nwith the asset management company/ trustees in connection with such inquiry conducted\nby the asset management company/ trustees.]\nGeneral provisions."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-6",
+   "ref": "Regulation 6",
+   "heading": "General provisions",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 34,
+   "text": "6. (1) Every public disclosure under this Chapter shall be made in such form as may be\nspecified.\n(2) The disclosures to be made by any person under this Chapter shall include those relating\nto trading by such person’s immediate relatives, and by any other person for whom such person\ntakes trading decisions.\nNOTE: It is intended that disclosure of trades would need to be of not only those executed\nby the person concerned but also by the immediate relatives and of other persons for whom the\nperson concerned takes trading decisions. These regulations are primarily aimed at preventing\nabuse by trading when in possession of unpublished price sensitive information and therefore,\nwhat matters is whether the person who takes trading decisions is in possession of such\ninformation rather than whether the person who has title to the trades is in such possession.\n(3) The disclosures of trading in securities shall also include trading in derivatives of\nsecurities and the traded value of the derivatives shall be taken into account for purposes of this\nChapter:\n\nProvided that trading in derivatives of securities is permitted by any law for the time\nbeing in force.\n(4) The disclosures made under this Chapter shall be maintained by the company, for a\nminimum period of five years, in such form as may be specified.\nDisclosures by certain persons."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7",
+   "ref": "Regulation 7",
+   "heading": "Disclosures by certain persons",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 35,
+   "text": "7. (1) Initial Disclosures.\n(a). 63[***]\n(b). Every person on appointment as a key managerial personnel or a director of the\ncompany or upon becoming a 64[promoter or member of the promoter group] shall\ndisclose his holding of securities of the company as on the date of appointment or\nbecoming a promoter, to the company within seven days of such appointment or\nbecoming a promoter.\n(2) Continual Disclosures.\n(a). Every promoter 65[, member of the promoter group], 66[designated person] and\ndirector of every company shall disclose to the company the number of such\nsecurities acquired or disposed of within two trading days of such transaction if the\nvalue of the securities traded, whether in one transaction or a series of transactions\n\nover any calendar quarter, aggregates to a traded value in excess of ten lakh rupees or\nsuch other value as may be specified;\n(b). Every company shall notify the particulars of such trading to the stock exchange on\nwhich the securities are listed within two trading days of receipt of the disclosure or\nfrom becoming aware of such information.\nExplanation. — It is clarified for the avoidance of doubts that the disclosure of the\nincremental transactions after any disclosure under this sub-regulation, shall be made\nwhen the transactions effected after the prior disclosure cross the threshold specified\nin clause (a) of sub-regulation (2).\n67[(c) The above disclosures shall be made in such form and such manner as may be\nspecified by the Board from time to time.]\nDisclosures by other connected persons.\n(3) Any company whose securities are listed on a stock exchange may, at its discretion\nrequire any other connected person or class of connected persons to make disclosures of holdings\nand trading in securities of the company in such form and at such frequency as may be\ndetermined by the company in order to monitor compliance with these regulations.\nNOTE: This is an enabling provision for listed companies to seek information from those to\nwhom it has to provide unpublished price sensitive information. This provision confers discretion\non any company to seek such information. For example, a listed company may ask that a\nmanagement consultant who would advise it on corporate strategy and would need to review\nunpublished price sensitive information, should make disclosures of his trades to the company.\n68[CHAPTER – IIIA\n\nDefinitions."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7a-p1",
+   "ref": "Regulation 7A (part 1 of 2)",
+   "heading": "Definitions",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 37,
+   "text": "7A. (1) In this Chapter, unless the context otherwise requires:-\n(a) ‘Investor Protection and Education Fund’ means the Investor Protection and Education\nFund created by the Board under section 11 of the Act;\n(b) ‘Informant’ means an individual(s), who voluntarily submits to the Board a Voluntary\nInformation Disclosure Form relating to an alleged violation of insider trading laws that\nhas occurred, is occurring or has a reasonable belief that it is about to occur, in a manner\nprovided under these regulations, regardless of whether such individual(s) satisfies the\nrequirements, procedures and conditions to qualify for a reward;\n(c) ‘Informant Incentive Committee’ means the High Powered Advisory Committee\nconstituted by the Board in the manner as may be specified under regulation 11 of the\nSecurities and Exchange Board of India (Settlement Proceedings) Regulations, 2018.\n(d) ‘insider trading laws’ means the following provisions of securities laws,-\ni. Section 15G of the Act;\nii. regulation 3 of these regulations;\niii. regulation 4 of these regulations;\niv. regulation 5 of these regulations; 69[***]\n70[iv(a) regulations 5A to 5G of these regulations; and]\nv. regulation 9 or regulation 9A of these regulations, in so far as they pertain to\ntrading or communication of unpublished price sensitive information.\n(e) ‘irrelevant, vexatious and frivolous information’ includes, reporting of information\nwhich in the opinion of the Board, -\n(i) Does not constitute a violation of insider trading laws; or\n\n(ii) Is rendered solely for the purposes of malicious prosecution; or\n(iii) Is rendered intentionally in an effort to waste the time and resource of the Board.\n(f) ‘Legal Representative’ means a duly authorised individual who is admitted to the\npractice of law in India;\n(g) ‘Monetary Sanctions’ shall mean any non-monetary settlement terms or any direction of\nthe Board, in the nature of disgorgement under securities laws aggregating to at least\nRupees one crore arising from the same operative facts contained in the original\ninformation.\n(h) ‘Original Information’ means any relevant information submitted in accordance with\nthese regulations pertaining to any violation of insider trading laws that is:-\n(i) derived from the independent knowledge and analysis of the Informant;\n(ii) not known to the Board from any other source, except where the Informant is the\noriginal source of the information;\n(iii) is sufficiently specific, credible and timely to - (1) commence an examination or\ninquiry or audit, (2) assist in an ongoing examination or investigation or inquiry or\naudit, (3) open or re-open an investigation or inquiry, or (4) inquire into a different\nconduct as part of an ongoing examination or investigation or inquiry or audit directed\nby the Board\n71[Explanation. – Information shall be considered timely, only if as on the date of\nreceipt of the duly completed Voluntary Information Disclosure Form by the Board, a\nperiod of not more than three years has elapsed since the date on which the first\nalleged trade constituting violation of insider trading laws was executed];\n(iv) not exclusively derived from an allegation made in a judicial or administrative\nhearing, in a Governmental report, hearing, audit, or investigation, or from the news\nmedia, except where the Informant is the original source of the information; and\n(v) not irrelevant or frivolous or vexatious.\n\nExplanation. –Information which does not in the opinion of the Board add to the\ninformation already possessed by the Board is not original information.\n(i)‘own analysis’ means the examination and evaluation of the relevant information by the\nInformant that may be publicly available, but which reveals analysis that is not known\nto SEBI:\nProvided that such analysis is not derived from professional or confidential\ncommunication protected under the Indian Evidence Act, 1872 (1 of 1872);\n(j)‘own knowledge’ means relevant information in the possession of the Informant not\nderived from publicly available sources:\nProvided that such knowledge is not derived from professional or confidential\ncommunications protected under the Indian Evidence Act, 1872 (1 of 1872);\n(k) ‘Reward’ means any gratuitous monetary amount for which an Informant is declared\neligible as per the provisions of these regulations;\n(l)‘securities laws’ means the Act, the Securities Contract (Regulations) Act, 1956 (42 of\n1956), the Depositories Act, 1996 (22 of 1996), the relevant provisions of any other law\nto the extent it is administered by the Board and the relevant rules and regulations made\nthereunder;\n(m) ‘voluntarily providing information’ means providing the Board with information before\nreceiving any request, inquiry, or demand from the Board, any other Central or State\nauthorities or other statutory authority about a matter, to which the information is\nrelevant;"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7a-p2",
+   "ref": "Regulation 7A (part 2 of 2)",
+   "heading": "Definitions",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 37,
+   "text": "(2) Words and expressions used but not defined in these regulations but defined in securities\nlaws, shall have the same meanings respectively assigned to them in those laws or any statutory\nmodification or re-enactment thereto."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7b",
+   "ref": "Regulation 7B",
+   "heading": "Submission of Original Information to the Board",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 40,
+   "text": "7B. (1) An Informant shall submit Original Information by furnishing the Voluntary Information\nDisclosure Form to the Office of Informant Protection of the Board in the format and manner set\nout in Schedule D. The Voluntary Information Disclosure Form may be submitted through\ninformant’s legal representative:\nProvided that where the Informant does not submit the Voluntary Information Disclosure Form\nthrough a legal representative, the Board may require such Informant to appear in person to\nascertain his/her identity and the veracity of the information so provided.\nExplanation. – Where any information pertaining to any violation of the Securities Laws is\nreceived in a manner not in accordance with the manner provided under these regulations, the\nBoard may require such information to be filed with it in accordance with these regulations or\nreject the same.\n(2) The legal representative shall,-\ni. Verify the identity and contact details of the Informant;\nii. Unless otherwise required by the Board, maintain confidentiality of the identity and\nexistence of the Informant, including the original Voluntary Information Disclosure\nForm;\niii. Undertake and certify that he/she,-\n(a) Has reviewed the completed and signed Voluntary Information Disclosure Form for\ncompleteness and accuracy and that the information contained therein is true, correct\nand complete to the best of his/her knowledge;\n(b) Has obtained a irrevocable consent from the Informant to provide to the Board with\noriginal Voluntary Information Disclosure Form whenever required by the Board;\nand\n(c) Agrees to be legally obligated to provide the original Voluntary Information\nDisclosure Form within seven (7) calendar days of receiving such requests from the\nBoard.\niv. Submits to the Board, the copy of the Voluntary Information Disclosure Form in the\nmanner provided in Schedule D of these regulations along with a signed certificate as\nrequired under clause (iii) of this sub-regulation (2).\n\n(3) An Informant shall while submitting the Voluntary Information Disclosure Form shall\nexpunge such information from the content of the information which could reasonably be\nexpected to reveal his or her identity and in case where such information cannot be expunged,\nthe Informant may identify such part of information or any document that the Informant believes\ncould reasonably be expected to reveal his or her identity."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7c",
+   "ref": "Regulation 7C",
+   "heading": "Receipt of Original Information by the Board",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 41,
+   "text": "7C. (1) The Board may designate a division to function as the independent Office of Informant\nProtection.\n(2) The Office of Informant Protection shall perform such functions as may be specified by the\nBoard, including,-\ni. Receiving and registering the Voluntary Information Disclosure Form;\nii. Making all necessary communications with the Informant;\niii. Maintaining a hotline for the benefit of potential Informant;\niv. Maintaining confidentiality of the legal representative of the Informant and act as an\ninterface between the Informant and the officers of the Board;\nv. Interacting with the Informant Incentive Committee;\nvi. Issuing press releases and rewards relating to Informant; and\nvii. Submitting an annual report to the Board relating to the functioning of the Office of\nInformant Protection.\n(3) On receipt of the Voluntary Information Disclosure Form, the Office of Informant Protection\nshall communicate the substance of the information along with the evidence submitted by the\ninformant to the relevant department or division of the Board for examination and initiation of\nnecessary action, if any.\n(4) The Board shall not be required to send any intimation or acknowledgement to the Informant\nor any other person, of the examination or action initiated by the Board, if any, pursuant to\n\nreceipt of the Voluntary Information Disclosure Form or information under these regulations,\nincluding rejection thereof.\nInformant Reward."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7d",
+   "ref": "Regulation 7D",
+   "heading": "Informant Reward",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 42,
+   "text": "7D. (1) 72[The] Board may at its sole discretion, declare an Informant eligible for Reward and\nintimate the Informant or his or her legal representative to file an application in the format\nprovided in Schedule-E for claiming such Reward:\nProvided that the amount of Reward shall be ten percent of the monetary sanctions 73[***] and\nshall not exceed Rupees 74[ten crores] or such higher amount as the Board may specify from time\nto time:\n75[***]\n76[(1A) If the total reward payable is less than or equal to Rupees One Crore, the Board may\ngrant the said reward upon the issuance of the final order by the Board:\nProvided that in case the total reward payable is more than Rupees One Crore, the Board may\ngrant an interim reward not exceeding Rupees One Crore upon the issuance of the final order by\nthe Board and the remaining reward amount shall be paid only upon collection or recovery of the\nmonetary sanctions amounting to at least twice the balance reward amount payable.]\n(2) In case of more than one Informant jointly providing the Original Information, the Reward,\nas specified in the intimation under sub-regulation (1), shall be divided equally amongst the total\nnumber of Informants.\n\n(3) 77[Any reward, whether interim or otherwise] under these regulations shall be paid from the\nInvestor Protection and Education Fund.\n78[NOTE: An illustrative table of the reward payable under this provision is stated below:\nIllustrative table of the reward payable\n(Amount in crore rupees)\nA. Monetary Sanctions ≥ 100.00 20.00 10.00 5.00 1.00\nB. Total Reward\nPayable\n= 10% of Monetary\nSanctions subject to\nmaximum of\nRupees 10.0 crores.\n10.00 2.00 1.00 0.50 0.10\nC. Maximum Amount\nPayable as Interim\nReward (on the\nissuance of final\norder by the Board\nagainst the person\ndirected to\ndisgorge)\n= Total Reward\nPayable (B) or\nRupees 1.00 Crore,\nwhichever is less.\n1.00 1.00\nD. Balance Amount of\nReward Payable (B\n- C).\n9.00 1.00 NIL because the entire reward\nwas paid after passing of final\norder\nE. Minimum Amount to\nbe collected /\nrecovered by SEBI,\nfor balance amount\nof reward (D) to\nbecome payable\n18.00 2.00 Not\nApplicable\nas the\namount of\ninterim\nreward\nNot\nApplicable\nas the\namount of\ninterim\nreward\nNot\nApplicable\nas the\namount of\ninterim\nreward\n\n= Twice the\nBalance Amount of\nReward Payable (2\nx D).\nitself is\nequal to\ntotal\neligible\nreward\nitself is\nequal to\ntotal\neligible\nreward\nitself is\nequal to\ntotal\neligible\nreward\n]\nDetermination of amount of Reward."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7e",
+   "ref": "Regulation 7E",
+   "heading": "Determination of amount of Reward",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 44,
+   "text": "7E. (1) The amount of the Reward, if payable, shall be determined by the Board.\n(2) While determining the amount of Reward under sub-regulation (1), the Board may specify\nthe factors that may be taken into consideration by the Informant Incentive Committee.\n(3) An Informant may be eligible for a Reward whether or not he reported the matter to his\norganization as per its internal legal and compliance procedures and irrespective of such\norganization’s compliance officer subsequently providing the same Information to the Board.\nApplication for Reward."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7f",
+   "ref": "Regulation 7F",
+   "heading": "Application for Reward",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 44,
+   "text": "7F. (1) Informants who are considered tentatively eligible for a Reward, shall submit the\nInformant Reward Claim Form set out in Schedule E to the Board within the period specified in\nthe intimation sent by the Board.\n(2) Prior to the payment of a Reward, an Informant shall directly or through his or her legal\nrepresentative, disclose his or her identity and provide such other information as the Board may\nrequire.\nRejection of claim for Reward."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7g",
+   "ref": "Regulation 7G",
+   "heading": "Rejection of claim for Reward",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 44,
+   "text": "7G. No Reward shall be made to an Informant:-\n(1) who does not submit original information;\n(2) who has acquired the Original Information, through or as a member, officer, or an employee\nof:-\n(i) any regulatory agency constituted by or under any law in India or outside India, including\nthe Board;\n(ii) any self-regulatory organization;\n\n(iii) the surveillance or investigation wings of any recognised stock exchange or clearing\ncorporation; or\n(iv) any law enforcement organization including the police or any central or state revenue\nauthorities.\n(3) against whom the Board may initiate or has initiated criminal proceedings under securities laws;\n(4) who wilfully refused to cooperate with the Board during its course of investigation, inquiry,\naudit, examination or other proceedings under securities laws;\n(5) who:\n(i) knowingly makes any false, fictitious, or fraudulent statement or representation; or\n(ii) uses any false writing or document knowing that the writing or document contains any\nfalse, fictitious, or fraudulent statement or entry; or\n(iii) fails to furnish the complete information available with him or accessible by him in\nrelation to the alleged violation.\n(6) who is obligated, under any law or otherwise, to report such Original Information to the Board,\nincluding a compliance officer under securities laws.\nProvided that the Board may if deemed fit, at its sole discretion, exempt a person from any of\nthese disqualifications.\nInformant confidentiality."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7h",
+   "ref": "Regulation 7H",
+   "heading": "Informant confidentiality",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 45,
+   "text": "7H. (1) Any information including Original Information may, at the discretion of the Board, be\nmade available:\n(a) when it is required to be disclosed in connection with any legal proceedings in\nfurtherance of the Board’s legal position;\n(b) as permitted by these regulations; or\n(c) as may be otherwise required or permitted by law.\n(2) Original Information may, at the discretion of the Board, be made available to -\n(i) any regulatory agency constituted by or under any law in India or outside India;\n(ii) any self-regulatory organization;\n(iii) the surveillance or investigation wings of any recognised stock exchange or clearing\ncorporation; or\n\n(iv) any law enforcement organization including the police or any central or state revenue\nauthorities; or\n(v) a public prosecutor in connection with any criminal proceedings.\nProvided that sharing of information shall be in accordance with such assurances of\nconfidentiality as the Board determines appropriate.\nExplanation - Nothing in these regulations is intended to limit, or shall be construed to limit, the\nability of the public prosecutor to share such evidence with potential witnesses or accused in\nconnection with any criminal proceedings.\n(3) The Original Information and identity provided by an Informant shall be held in confidence\nand exempted from disclosure under clauses (g) and (h) of sub-section (1) of section 8 of the\nRight to Information Act, 2005 (No. 22 of 2005).\n(4) Subject to the law of evidence for the time being in force, nothing in these regulations shall\nprejudice the right of the Board to use or to rely on information received otherwise.\n(5) No person shall have the right to compel disclosure of the identity, existence of an Informant\nor the information provided by an Informant, except to the extent relied upon in any proceeding\ninitiated against such person by the Board.\nExplanation 1. – The confidentiality in respect of the identity and existence of the Informant\nshall be maintained throughout the process of investigation, inquiry and examination as well as\nduring any proceedings before the Board and save where the evidence of the Informant is\nrequired during such proceedings, advance notice of such evidence may be provided to the\nnoticee at least seven (7) working days prior to the date of the scheduled hearing for evidence.\nExplanation 2. – In proceedings before any authority other than the Board, the Board may\nrequest maintenance of confidentiality of the identity and existence of an Informant in such\nproceeding.\nProtection against retaliation and victimisation"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7i",
+   "ref": "Regulation 7I",
+   "heading": "",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 47,
+   "text": "7I. (1) Every person required to have a Code of Conduct under these regulations shall ensure that\nsuch a Code of Conduct provides for suitable protection against any discharge, termination,\ndemotion, suspension, threats, harassment, directly or indirectly or discrimination against any\nemployee who files a Voluntary Information Disclosure Form, irrespective of whether the\ninformation is considered or rejected by the Board or he or she is eligible for a Reward under\nthese regulations, by reason of:\n(i) filing a Voluntary Information Disclosure Form under these regulations;\n(ii) testifying in, participating in, or otherwise assisting or aiding the Board in any\ninvestigation, inquiry, audit, examination or proceeding instituted or about to be instituted\nfor an alleged violation of insider trading laws or in any manner aiding the enforcement\naction taken by the Board; or\n(iii) breaching any confidentiality agreement or provisions of any terms and conditions of\nemployment or engagement solely to prevent any employee from cooperating with the\nBoard in any manner.\nExplanation 1. - For the purpose of this Chapter, “employee” means any individual who during\nemployment may become privy to information relating to violation of insider trading laws and\nfiles a Voluntary Information Disclosure Form under these regulations and is a director, partner,\nregular or contractual employee, but does not include an advocate.\nExplanation 2. - Nothing in this regulation shall require the employee to establish that,-\n(i) the Board has taken up any enforcement action in furtherance of information provided by\nsuch person; or\n(ii) the information provided fulfils the criteria of being considered as an Original\nInformation under these regulations.\n(2) Nothing in these regulations shall prohibit any Informant who believes that he or she has\nbeen subject to retaliation or victimisation by his or her employer, from approaching the\ncompetent court or tribunal for appropriate relief.\n(3) Notwithstanding anything contained in sub-regulation (2), any employer who violates this\nChapter may be liable for penalty, debarment, suspension, and/or criminal prosecution by the\nBoard, as the case may be:\n\nProvided that nothing in these regulations will require the Board to direct re-instatement or\ncompensation by an employer.\n(4) Nothing in these regulations shall diminish the rights and privileges of or remedies available\nto any Informant under any other law in force."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7j",
+   "ref": "Regulation 7J",
+   "heading": "Void Agreements",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 48,
+   "text": "7J. (1) Any term in an agreement (oral or written) or Code of Conduct, is void in so far as it\npurports to preclude any person, other than an advocate, from submitting to the Board\ninformation relating to the violation of the securities laws that has occurred, is occurring or has a\nreasonable belief that it would occur.\n(2) No person shall by way of any threat or act impede an individual from communicating with\nthe Board, including enforcing or threatening to enforce, a confidentiality agreement (other than\nagreements related to legal representations of a client and communications there under) with\nrespect to such communications.\nExplanation. - No employer shall require an employee to notify him of any Voluntary\nInformation Disclosure Form filed with the Board or to seek its prior permission or consent or\nguidance of any person engaged by the employer before or after such filing."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7k",
+   "ref": "Regulation 7K",
+   "heading": "No Amnesty",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 48,
+   "text": "7K. (1) Nothing in these regulations shall be deemed to provide any amnesty or immunity to an\nInformant for violation of securities law.\n(2) Where an action against an Informant is deemed appropriate the Board may take into account\nthe co-operation rendered in the final determination of any penalty, sanction, direction or\nsettlement thereof, as the case may be.\n(3) Where an action against an Informant is deemed appropriate, the Board while determining\nthe value of monetary sanctions shall not take into account the monetary sanctions that the\nInformant is ordered to pay or that which any other person is ordered to pay if the liability of\n\nsuch other person is based substantially on the conduct that the Informant directed, planned, or\ninitiated.\n(4) An Informant who may be liable for enforcement action by the Board based on his or her\nconduct in connection with securities laws violations reported in the Voluntary Information\nDisclosure Form filed with the Board, may simultaneously or at any time thereafter file an\napplication seeking settlement with confidentiality under Chapter IX of the Securities and\nExchange Board of India (Settlement Proceedings) Regulations, 2018.\n(5) Notwithstanding any action taken by the Board against an Informant, the Informant may,\nafter payment of any monetary amounts be eligible for a Reward."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7l",
+   "ref": "Regulation 7L",
+   "heading": "Functions of Informant Incentive Committee",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 49,
+   "text": "7L. (1) The Informant Incentive Committee shall be assisted by the Office of Informant\nProtection.\n(2) The Informant Incentive Committee shall give its recommendations to the Board on the\nfollowing matters,-\ni. Eligibility of Informant for reward;\nii. Determination under regulations 7E and 7G; and\niii. Such other issues relating to Informant as the Board may require from time to time.\n(3) The Informant Incentive Committee shall conduct its meetings in the manner specified by the\nBoard in this regard.\nPublic dissemination and incentivisation of Informant."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-7m",
+   "ref": "Regulation 7M",
+   "heading": "Public dissemination and incentivisation of Informant",
+   "chapter": "Chapter III — DISCLOSURES OF TRADING BY INSIDERS",
+   "page": 49,
+   "text": "7M. (1) The Board shall upload on its website the following,-\ni. Annual report of the Office of Informant Protection;\nii. Press release informing the public that an intimation to the Informant has been issued\nunder Regulation 7D;\n\niii. Press release informing the public that a Reward has been paid under these\nregulations and the amount of Monetary Sanctions recovered pursuant to the\ninformation provided by the Informant;\niv. The Order issuing the Reward;\nExplanation. – Nothing in this regulation shall require the Board to disclose information\nthat could identify the Informant or the information provided by the Informant.]\nCode of Fair Disclosure."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-8",
+   "ref": "Regulation 8",
+   "heading": "Code of Fair Disclosure",
+   "chapter": "Chapter IV — CODES OF FAIR DISCLOSURE AND CONDUCT",
+   "page": 50,
+   "text": "8. (1) The board of directors of every company, whose securities are listed on a stock\nexchange, shall formulate and publish on its official website, a code of practices and procedures\nfor fair disclosure of unpublished price sensitive information that it would follow in order to\nadhere to each of the principles set out in Schedule A to these regulations, without diluting the\nprovisions of these regulations in any manner.\nNOTE: This provision intends to require every company whose securities are listed on\nstock exchanges to formulate a stated framework and policy for fair disclosure of events and\noccurrences that could impact price discovery in the market for its securities. Principles such as,\nequality of access to information, publication of policies such as those on dividend, inorganic\ngrowth pursuits, calls and meetings with analysts, publication of transcripts of such calls and\nmeetings, and the like are set out in the schedule.\n(2) Every such code of practices and procedures for fair disclosure of unpublished price\nsensitive information and every amendment thereto shall be promptly intimated to the stock\nexchanges where the securities are listed.\nNOTE: This provision is aimed at requiring transparent disclosure of the policy\nformulated in sub-regulation (1).\n\nCode of Conduct."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-9-p1",
+   "ref": "Regulation 9 (part 1 of 2)",
+   "heading": "Code of Conduct",
+   "chapter": "Chapter IV — CODES OF FAIR DISCLOSURE AND CONDUCT",
+   "page": 51,
+   "text": "9. (1) The board of directors of every listed company and 79[the board of directors or\nhead(s) of the organisation of every intermediary shall ensure that the chief executive officer or\nmanaging director] shall formulate a code of conduct 80[with their approval] to regulate, monitor\nand report trading by its 81[designated persons and immediate relatives of designated persons]\ntowards achieving compliance with these regulations, adopting the minimum standards set out in\nSchedule B 82[(in case of a listed company) and Schedule C (in case of an intermediary)] to these\nregulations, without diluting the provisions of these regulations in any manner.\n83[Explanation – For the avoidance of doubt it is clarified that intermediaries, which are listed,\nwould be required to formulate a code of conduct to regulate, monitor and report trading by their\ndesignated persons, by adopting the minimum standards set out in Schedule B with respect to\ntrading in their own securities and in Schedule C with respect to trading in other securities.]\nNOTE: It is intended that every company whose securities are listed on stock exchanges\nand every 84[intermediary] registered with SEBI is mandatorily required to formulate a code of\nconduct governing trading by 85[designated persons and their immediate relatives]. The\nstandards set out in the 86[schedules] are required to be addressed by such code of conduct.\n\n(2) 87[The board of directors or head(s) of the organisation, of every other person who is\nrequired to handle unpublished price sensitive information in the course of business operations\nshall formulate a code of conduct to regulate, monitor and report trading by their designated\npersons and immediate relative of designated persons towards achieving compliance with these\nregulations, adopting the minimum standards set out in Schedule C to these regulations, without\ndiluting the provisions of these regulations in any manner.\nExplanation - Professional firms such as auditors, accountancy firms, law firms, analysts,\ninsolvency professional entities, consultants, banks etc., assisting or advising listed companies\nshall be collectively referred to as fiduciaries for the purpose of these regulations.]\nNOTE: 88[This provision is intended to mandate persons other than listed companies and\nintermediaries that are required to handle unpublished price sensitive information to formulate a\ncode of conduct governing trading in securities by their designated persons. These entities\ninclude professional firms such as auditors, accountancy firms, law firms, analysts, insolvency\nprofessional entities, consultants, banks etc., assisting or advising listed companies. Even entities\nthat normally operate outside the capital market may handle unpublished price sensitive\ninformation. This provision would mandate all of them to formulate a code of conduct.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-9-p2",
+   "ref": "Regulation 9 (part 2 of 2)",
+   "heading": "Code of Conduct",
+   "chapter": "Chapter IV — CODES OF FAIR DISCLOSURE AND CONDUCT",
+   "page": 51,
+   "text": "(3) Every listed company, 89[intermediary] and other persons formulating a code of conduct\nshall identify and designate a compliance officer to administer the code of conduct and other\nrequirements under these regulations.\nNOTE: This provision is intended to designate a senior officer as the compliance officer with the\nresponsibility to administer the code of conduct and monitor compliance with these regulations.\n90[(4) For the purpose of sub regulation (1) and (2), the board of directors or such other\nanalogous authority shall in consultation with the compliance officer specify the designated\npersons to be covered by the code of conduct on the basis of their role and function in the\norganisation and the access that such role and function would provide to unpublished price\nsensitive information in addition to seniority and professional designation and shall include:-\n(i) Employees of such listed company, intermediary or fiduciary designated on the basis\nof their functional role or access to unpublished price sensitive information in the\norganization by their board of directors or analogous body;\n(ii) Employees of material subsidiaries of such listed companies designated on the basis\nof their functional role or access to unpublished price sensitive information in the\norganization by their board of directors;\n(iii) All promoters of listed companies and promoters who are individuals or investment\ncompanies for intermediaries or fiduciaries;\n(iv) Chief Executive Officer and employees upto two levels below Chief Executive\nOfficer of such listed company, intermediary, fiduciary and its material subsidiaries\nirrespective of their functional role in the company or ability to have access to\nunpublished price sensitive information;\n\n(v) Any support staff of listed company, intermediary or fiduciary such as IT staff or\nsecretarial staff who have access to unpublished price sensitive information.]\n91[Institutional Mechanism for Prevention of Insider trading."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-9a",
+   "ref": "Regulation 9A",
+   "heading": "",
+   "chapter": "Chapter IV — CODES OF FAIR DISCLOSURE AND CONDUCT",
+   "page": 54,
+   "text": "9A. (1) The Chief Executive Officer, Managing Director or such other analogous person of a\nlisted company, intermediary or fiduciary shall put in place adequate and effective system of\ninternal controls to ensure compliance with the requirements given in these regulations to\nprevent insider trading.\n(2) The internal controls shall include the following:\n(a). all employees who have access to unpublished price sensitive information are\nidentified as designated 92[person];\n(b). all the unpublished price sensitive information shall be identified and its\nconfidentiality shall be maintained as per the requirements of these regulations;\n(c). adequate restrictions shall be placed on communication or procurement of\nunpublished price sensitive information as required by these regulations;\n(d). lists of all employees and other persons with whom unpublished price sensitive\ninformation is shared shall be maintained and confidentiality agreements shall be\nsigned or notice shall be served to all such employees and persons;\n(e). all other relevant requirements specified under these regulations shall be complied\nwith;\n(f). periodic process review to evaluate effectiveness of such internal controls.\n\n(3) The board of directors of every listed company and the board of directors or head(s) of the\norganisation of intermediaries and fiduciaries shall ensure that the Chief Executive Officer or the\nManaging Director or such other analogous person ensures compliance with regulation 9 and\nsub-regulations (1) and (2) of this regulation.\n(4) The Audit Committee of a listed company or other analogous body for intermediary or\nfiduciary shall review compliance with the provisions of these regulations at least once in a\nfinancial year and shall verify that the systems for internal control are adequate and are operating\neffectively.\n(5) Every listed company shall formulate written policies and procedures for inquiry in case of\nleak of unpublished price sensitive information or suspected leak of unpublished price sensitive\ninformation, which shall be approved by board of directors of the company and accordingly\ninitiate appropriate inquiries on becoming aware of leak of unpublished price sensitive\ninformation or suspected leak of unpublished price sensitive information and inform the Board\npromptly of such leaks, inquiries and results of such inquiries.\n(6) The listed company shall have a whistle-blower policy and make employees aware of such\npolicy to enable employees to report instances of leak of unpublished price sensitive information.\n(7) If an inquiry has been initiated by a listed company in case of leak of unpublished price\nsensitive information or suspected leak of unpublished price sensitive information, the relevant\nintermediaries and fiduciaries shall co-operate with the listed company in connection with such\ninquiry conducted by listed company.]\n\nMISCELLANEOUS\nSanction for violations."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-10",
+   "ref": "Regulation 10",
+   "heading": "Sanction for violations",
+   "chapter": "Chapter V",
+   "page": 56,
+   "text": "10. Any contravention of these regulations shall be dealt with by the Board in accordance\nwith the Act.\nPower to remove difficulties.\n93[11. (1) In order to remove any difficulties in the interpretation or application of the\nprovisions of these regulations, the Board shall have the power to issue directions through\nguidance notes or circulars:\nProvided that where any direction is issued by the Board in a specific case relating to\ninterpretation or application of any provision of these regulations, it shall be done only after\naffording a reasonable opportunity of being heard to the concerned persons and after recording\nreasons for the direction.]\n94[(2) For the purpose of Chapter IIIA, the Board may,-\ni. by circular, specify procedures and processes for carrying out the purposes of these\nregulations;\nii. remove any difficulty in the interpretation or application or implementation of the\nprovisions of these regulations, by issuing clarifications and specifying procedures\nthrough circulars or guidelines.]\nRepeal and Savings."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#regulation-12",
+   "ref": "Regulation 12",
+   "heading": "Repeal and Savings",
+   "chapter": "Chapter V",
+   "page": 56,
+   "text": "12. (1) The Securities and Exchange Board of India (Prohibition of Insider Trading)\nRegulations, 1992 are hereby repealed.\n(2) Notwithstanding such repeal,—\n\n(a) the previous operation of the repealed regulations or anything duly done or suffered\nthereunder, any right, privilege, obligation or liability acquired, accrued or incurred under the\nrepealed regulations, any penalty, forfeiture or punishment incurred in respect of any offence\ncommitted against the repealed regulations, or any investigation, legal proceeding or remedy in\nrespect of any such right, privilege, obligation, liability, penalty, forfeiture or punishment as\naforesaid, shall remain unaffected as if the repealed regulations had never been repealed; and\n(b) anything done or any action taken or purported to have been done or taken including any\nadjudication, enquiry or investigation commenced or show-cause notice issued under the\nrepealed regulations prior to such repeal, shall be deemed to have been done or taken under the\ncorresponding provisions of these regulations;\n(3) After the repeal of Securities and Exchange Board of India (Prohibition of Insider\nTrading) Regulations, 1992, any reference thereto in any other regulations made, guidelines or\ncirculars issued thereunder by the Board shall be deemed to be a reference to the corresponding\nprovisions of these regulations."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a",
+   "ref": "Schedule A",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "[See sub-regulation (1) of regulation 8]\nPrinciples of Fair Disclosure for purposes of Code of Practices and Procedures for Fair"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-1",
+   "ref": "Schedule A, para 1",
+   "heading": "Disclosure of Unpublished Price Sensitive Information",
+   "chapter": "",
+   "page": 58,
+   "text": "1. Prompt public disclosure of unpublished price sensitive information that would impact\nprice discovery no sooner than credible and concrete information comes into being in order to\nmake such information generally available."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-2",
+   "ref": "Schedule A, para 2",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "2. Uniform and universal dissemination of unpublished price sensitive unpublished price\nsensitive information to avoid selective disclosure."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-3",
+   "ref": "Schedule A, para 3",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "3. Designation of a senior officer as a chief investor relations officer to deal with\ndissemination of information and disclosure of unpublished price sensitive information."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-4",
+   "ref": "Schedule A, para 4",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "4. Prompt dissemination of unpublished price sensitive information that gets disclosed\nselectively, inadvertently or otherwise to make such information generally available."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-5",
+   "ref": "Schedule A, para 5",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "5. Appropriate and fair response to queries on news reports and requests for verification of\nmarket rumours by regulatory authorities."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-6",
+   "ref": "Schedule A, para 6",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "6. Ensuring that information shared with analysts and research personnel is not unpublished\nprice sensitive information."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-7",
+   "ref": "Schedule A, para 7",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "7. Developing best practices to make transcripts or records of proceedings of meetings with\nanalysts and other investor relations conferences on the official website to ensure official\nconfirmation and documentation of disclosures made."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-a-para-8",
+   "ref": "Schedule A, para 8",
+   "heading": "",
+   "chapter": "",
+   "page": 58,
+   "text": "8. Handling of all unpublished price sensitive information on a need-to-know basis."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b",
+   "ref": "Schedule B",
+   "heading": "",
+   "chapter": "",
+   "page": 59,
+   "text": "[See sub-regulation (1) 95[***] of regulation 9]\nMinimum Standards for Code of Conduct 96[for Listed Companies] to Regulate,"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-1",
+   "ref": "Schedule B, para 1",
+   "heading": "Monitor and Report Trading by 97[Designated Persons]",
+   "chapter": "",
+   "page": 59,
+   "text": "1. The compliance officer shall report to the board of directors and in particular, shall\nprovide reports to the Chairman of the Audit Committee, if any, or to the Chairman of the board\nof directors at such frequency as may be stipulated by the board of directors, 98[but not less than\nonce in a year]."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-2",
+   "ref": "Schedule B, para 2",
+   "heading": "",
+   "chapter": "",
+   "page": 59,
+   "text": "2. All information shall be handled within the organisation on a need-to-know basis and no\nunpublished price sensitive information shall be communicated to any person except in\nfurtherance of 99[***] legitimate purposes, performance of duties or discharge of 100[***] legal\nobligations. The code of conduct shall contain norms for appropriate Chinese Walls procedures,\nand processes for permitting any designated person to “cross the wall”."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-3",
+   "ref": "Schedule B, para 3",
+   "heading": "",
+   "chapter": "",
+   "page": 59,
+   "text": "3. 101[Designated Persons and immediate relatives of designated persons] in the organisation\nshall be governed by an internal code of conduct governing dealing in securities. 102[***]\n\n103[4. (1) Designated persons may execute trades subject to compliance with these regulations.\nTowards this end, a notional trading window shall be used as an instrument of monitoring trading\nby the designated persons. The trading window shall be closed when the compliance officer\ndetermines that a designated person or class of designated persons can reasonably be expected to\nhave possession of unpublished price sensitive information. Such closure shall be imposed in\nrelation to such securities to which such unpublished price sensitive information relates.\nDesignated persons and their immediate relatives shall not trade in securities when the trading\nwindow is closed.\n104[Provided that, for unpublished price sensitive information not emanating from within the\nListed Company, trading window may not be closed.]\n(2) 105[Trading restriction period 106[shall] be made applicable from the end of every quarter till\n48 hours after the declaration of financial results. The gap between clearance of accounts by\naudit committee and board meeting should be as narrow as possible and preferably on the same\nday to avoid leakage of material information.]\n107[(3) The trading window restrictions mentioned in sub-clause (1) shall not apply in respect of\n–\n(a) transactions specified in clauses (i) to (iv) and (vi) of the proviso to sub-regulation (1) of\nregulation 4 and in respect of a pledge of shares for a bonafide purpose such as raising of funds,\nsubject to pre-clearance by the compliance officer and compliance with the respective\nregulations made by the Board;\n(b) transactions which are undertaken in accordance with respective regulations made by the\nBoard such as acquisition by conversion of warrants or debentures, subscribing to rights issue,\naccess that such role and function would provide to unpublished price sensitive information in addition to seniority\nand professional designation.”\n103 First paragraph numbered as sub-clause (1) and second and third paragraph combined and numbered as sub-\nclause (2) by Securities and Exchange Board of India (Prohibition of Insider Trading) (Second Amendment)\nRegulations, 2019 (w.e.f. July 25, 2019)\n\nfurther public issue, preferential allotment or tendering of shares in a buy-back offer, open offer,\ndelisting offer] 108[or transactions which are undertaken through such other mechanism as may\nbe specified by the Board from time to time]."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-5",
+   "ref": "Schedule B, para 5",
+   "heading": "",
+   "chapter": "",
+   "page": 61,
+   "text": "5. The timing for re-opening of the trading window shall be determined by the compliance\nofficer taking into account various factors including the unpublished price sensitive information\nin question becoming generally available and being capable of assimilation by the market, which\nin any event shall not be earlier than forty-eight hours after the information becomes generally\navailable. 109[***]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-6",
+   "ref": "Schedule B, para 6",
+   "heading": "",
+   "chapter": "",
+   "page": 61,
+   "text": "6. When the trading window is open, trading by designated persons shall be subject to pre-\nclearance by the compliance officer, if the value of the proposed trades is above such thresholds\nas the board of directors may stipulate. 110[***]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-8",
+   "ref": "Schedule B, para 8",
+   "heading": "",
+   "chapter": "",
+   "page": 61,
+   "text": "8. Prior to approving any trades, the compliance officer shall be entitled to seek declarations\nto the effect that the applicant for pre-clearance is not in possession of any unpublished price\nsensitive information. He shall also have regard to whether any such declaration is reasonably\ncapable of being rendered inaccurate."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-9",
+   "ref": "Schedule B, para 9",
+   "heading": "",
+   "chapter": "",
+   "page": 62,
+   "text": "9. The code of conduct shall specify any reasonable timeframe, which in any event shall not\nbe more than seven trading days, within which trades that have been pre-cleared have to be\nexecuted by the designated person, failing which fresh pre-clearance would be needed for the\ntrades to be executed."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-10",
+   "ref": "Schedule B, para 10",
+   "heading": "",
+   "chapter": "",
+   "page": 62,
+   "text": "10. The code of conduct shall specify the period, which in any event shall not be less than six\nmonths, within which a designated person who is permitted to trade shall not execute a contra\ntrade. The compliance officer may be empowered to grant relaxation from strict application of\nsuch restriction for reasons to be recorded in writing provided that such relaxation does not\nviolate these regulations. Should a contra trade be executed, inadvertently or otherwise, in\nviolation of such a restriction, the profits from such trade shall be liable to be disgorged for\nremittance to the Board for credit to the Investor Protection and Education Fund administered by\nthe Board under the Act.\n112[Provided that this shall not be applicable for trades pursuant to exercise of stock options.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-11",
+   "ref": "Schedule B, para 11",
+   "heading": "",
+   "chapter": "",
+   "page": 62,
+   "text": "11. The code of conduct shall stipulate such formats as the board of directors deems\nnecessary for making applications for pre-clearance, reporting of trades executed, reporting of\ndecisions not to trade after securing pre-clearance 113[***] and for reporting level of holdings in\nsecurities at such intervals as may be determined as being necessary to monitor compliance with\nthese regulations."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-12",
+   "ref": "Schedule B, para 12",
+   "heading": "",
+   "chapter": "",
+   "page": 62,
+   "text": "12. 114[Without prejudice to the power of the Board under the Act, the code of conduct shall\nstipulate the sanctions and disciplinary actions, including wage freeze, suspension, recovery, etc.,\nthat may be imposed, by the listed company required to formulate a code of conduct under sub-\n\nregulation (1) of regulation 9, for the contravention of the code of conduct. Any amount\ncollected under this clause shall be remitted to the Board for credit to the Investor Protection and"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b-para-13",
+   "ref": "Schedule B, para 13",
+   "heading": "Education Fund administered by the Board under the Act.]",
+   "chapter": "",
+   "page": 63,
+   "text": "13. The code of conduct shall specify that in case it is observed by the 115[listed company]\nrequired to formulate a code of conduct under sub-regulation (1) 116[***]of regulation 9, that\nthere has been a violation of these regulations, 117[it] shall 118[promptly inform the stock\nexchange(s) where the concerned securities are traded, in such form and such manner as may be\nspecified by the Board from time to time].\n119[14. Designated persons shall be required to disclose names and Permanent Account Number\nor any other identifier authorized by law of the following persons to the company on an annual\nbasis and as and when the information changes:\na) immediate relatives\nb) persons with whom such designated person(s) shares a material financial\nrelationship\nc) Phone, mobile and cell numbers which are used by them\nIn addition, the names of educational institutions from which designated persons have graduated\nand names of their past employers shall also be disclosed on a one time basis.\nExplanation – The term “material financial relationship” shall mean a relationship in which one\nperson is a recipient of any kind of payment such as by way of a loan or gift 120[from a\n\ndesignated person] during the immediately preceding twelve months, equivalent to at least 25%\n121[of the annual income of such designated person] but shall exclude relationships in which the\npayment is based on arm’s length transactions.]\n122[15. Listed entities shall have a process for how and when people are brought ‘inside’ on\nsensitive transactions. Individuals should be made aware of the duties and responsibilities\nattached to the receipt of Inside Information, and the liability that attaches to misuse or\nunwarranted use of such information.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1",
+   "ref": "Schedule B1",
+   "heading": "",
+   "chapter": "",
+   "page": 64,
+   "text": "(See Regulation 5F of Chapter - IIA)\nMinimum Standards of Code of Conduct for Mutual Funds to regulate, monitor and\nreport trading by the Designated Persons in the units of own mutual fund schemes"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-1",
+   "ref": "Schedule B1, para 1",
+   "heading": "",
+   "chapter": "",
+   "page": 64,
+   "text": "1. The compliance officer shall report to the board of directors of asset management\ncompany and provide reports to the Chairman of the Audit Committee of the asset\nmanagement company and to the trustees, at such frequency as may be stipulated by the\nboard of directors, but in any case not less than once in a year."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-2",
+   "ref": "Schedule B1, para 2",
+   "heading": "",
+   "chapter": "",
+   "page": 64,
+   "text": "2. The information shall be handled within the organisation on a need-to-know basis and\nno unpublished price sensitive information shall be communicated to any person except in\nfurtherance of legitimate purpose, performance of duties or discharge of legal obligations.\nThe code of conduct shall contain norms for appropriate Chinese Walls procedures and\nprocesses for permitting any designated person to “cross the wall”."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-3",
+   "ref": "Schedule B1, para 3",
+   "heading": "",
+   "chapter": "",
+   "page": 65,
+   "text": "3. Designated Persons and immediate relatives of designated persons in the organisation\nshall be governed by an internal code of conduct governing dealings in units of the mutual\nfund."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-4",
+   "ref": "Schedule B1, para 4",
+   "heading": "",
+   "chapter": "",
+   "page": 65,
+   "text": "4. (1)Designated persons may deal in the units of the mutual fund subject to compliance\nwith these regulations. The compliance officer of the asset management company shall\ndetermine the closure period during which a Designated Person or class of Designated\nPersons can reasonably be expected to have possession of unpublished price sensitive\ninformation. Such closure period shall be imposed in relation to such schemes to which\nsuch unpublished price sensitive information relates. During such time, any requests to\ntransact in the units of the mutual funds by the Designated Persons and/or their\nimmediate relatives shall not be processed by the asset management company.\n(2) The closure period restrictions mentioned in sub-clause (1) shall not apply in respect\nof transactions specified in clauses (i) to (iii) of the proviso to sub-regulation (1) of\nregulation 5D and in respect to the pledge of mutual fund units for a bonafide purpose,\nsubject to pre-clearance by the compliance officer and compliance with the other\nrequirements, if any, as may be specified by the Board."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-5",
+   "ref": "Schedule B1, para 5",
+   "heading": "",
+   "chapter": "",
+   "page": 65,
+   "text": "5. The timing for re-opening of the closure period shall be determined by the compliance\nofficer taking into account various factors including the unpublished price sensitive\ninformation in question becoming generally available and being capable of assimilation by\nthe market."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-6",
+   "ref": "Schedule B1, para 6",
+   "heading": "",
+   "chapter": "",
+   "page": 65,
+   "text": "6. When the closure period is not applicable, trading in the mutual fund units by\nDesignated Persons and their immediate relatives including at the time of initiation of\nsystematic transactions shall be subject to pre-clearance by the compliance officer, if the\nvalue of the proposed trades is above such thresholds (separate thresholds for systematic\ntransactions and lumpsum payments) as the Board of AMCs may stipulate:\n\nProvided that for transactions in units by the Designated Persons pursuant to the mandatory\nrequirement under ‘Alignment of interest of Key Employees (‘Designated Employees’) of\nasset management companies with the unit holders of the mutual fund schemes’ or\notherwise shall be as specified by the Board in this regard:\nProvided further that the requirement of pre-clearance of trades by Designated Persons\nshall not apply for trading in Overnight Schemes, Index funds and Exchange Traded\nFunds."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-7",
+   "ref": "Schedule B1, para 7",
+   "heading": "Funds",
+   "chapter": "",
+   "page": 66,
+   "text": "7. Prior to approving any trades, the compliance officer shall be entitled to seek a\ndeclaration to the effect that the applicant for pre-clearance is not in possession of any\nunpublished price sensitive information with due regard to whether any such declaration is\nreasonably capable of being rendered inaccurate."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-8",
+   "ref": "Schedule B1, para 8",
+   "heading": "",
+   "chapter": "",
+   "page": 66,
+   "text": "8. The code of conduct formulated by the chief executive officer or managing director of\nthe asset management company shall specify any reasonable timeframe, which in any event\nshall not be more than seven business days, within which trades that have been pre-cleared\nhave to be executed by the Designated Person, failing which fresh pre-clearance shall be\nrequired for the trades to be executed."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-9",
+   "ref": "Schedule B1, para 9",
+   "heading": "",
+   "chapter": "",
+   "page": 66,
+   "text": "9. The code of conduct shall also specify the period, which in any event shall not be less\nthan two months, within which a Designated Person who is permitted to trade shall not\nexecute a contra trade. The compliance officer may be empowered to grant relaxation from\nthe strict application of such restriction for reasons to be recorded in writing provided that\nsuch relaxation does not violate these regulations or other requirements specified by the\nBoard. In case a contra trade is executed, inadvertently or otherwise, in violation of such a\nrestriction, the profits or loss avoided from such trade shall be liable to be disgorged by the\nasset management company and credited under intimation to the Board, to the Investor\nProtection and Education Fund established by the Board under the Act:\nProvided that trading restrictions imposed for contra trade shall not be applicable for\nOvernight Schemes."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-10",
+   "ref": "Schedule B1, para 10",
+   "heading": "",
+   "chapter": "",
+   "page": 67,
+   "text": "10. The code of conduct shall also stipulate such formats as the board of directors deem\nnecessary for making applications for reporting of trades executed and for reporting level\nof holdings in units of mutual funds at such intervals as may be determined as being\nnecessary to monitor compliance with these regulations."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-11",
+   "ref": "Schedule B1, para 11",
+   "heading": "",
+   "chapter": "",
+   "page": 67,
+   "text": "11. The code of conduct shall stipulate the internal sanctions and disciplinary actions,\nincluding wage freeze, suspension, recovery, etc., that may be imposed by the asset\nmanagement company for the contravention of the code of conduct. Any amount collected\nunder this clause shall be disgorged by the asset management company and credited under\nintimation to the Board, to the Investor Protection and Education Fund established by the\nBoard under the Act."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-12",
+   "ref": "Schedule B1, para 12",
+   "heading": "Board under the Act",
+   "chapter": "",
+   "page": 67,
+   "text": "12. The code of conduct shall specify that in case it is observed by the asset management\ncompany that there has been a violation of these regulations, it shall promptly inform to the\nstock exchange(s), in such form and such manner as may be specified by the Board from\ntime to time."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-13",
+   "ref": "Schedule B1, para 13",
+   "heading": "",
+   "chapter": "",
+   "page": 67,
+   "text": "13. Designated Persons shall be required to disclose names and Permanent Account\nNumber or any other identifier authorized by law of the following persons to the mutual\nfund on an annual basis and as and when the information changes:\na) immediate relatives\nb) persons with whom such Designated Person(s) shares a material financial\nrelationship\nc) Phone, mobile and cell numbers which are used by them\nIn addition, the names of educational institutions from which Designated Persons have\ngraduated and names of their past employers shall also be disclosed on a one time basis.\nExplanation – The term “material financial relationship” shall mean a relationship in which\none person is a recipient of any kind of payment such as by way of a loan or gift from a\nDesignated Person during the immediately preceding twelve months, equivalent to at least\n\n25% of the annual income of such Designated Person but shall exclude relationships in\nwhich the payment is based on arm’s length transactions."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-b1-para-14",
+   "ref": "Schedule B1, para 14",
+   "heading": "",
+   "chapter": "",
+   "page": 68,
+   "text": "14. Mutual funds shall have a process that would determine how an individual is brought\n‘inside’ to access sensitive transactions and shall be made aware of the duties and\nresponsibilities attached to the receipt of such Inside Information and the liability that is\nattached to the misuse or unwarranted use of such information.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c",
+   "ref": "Schedule C",
+   "heading": "",
+   "chapter": "",
+   "page": 68,
+   "text": "[See sub-regulation (1) and sub-regulation (2) of regulation 9]\nMinimum Standards for Code of Conduct for Intermediaries and Fiduciaries to Regulate,"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-1",
+   "ref": "Schedule C, para 1",
+   "heading": "Monitor and Report Trading by Designated Persons",
+   "chapter": "",
+   "page": 68,
+   "text": "1. The compliance officer shall report to the board of directors or head(s) of the organisation (or\ncommittee constituted in this regard) and in particular, shall provide reports to the Chairman of\nthe Audit Committee or other analogous body, if any, or to the Chairman of the board of\ndirectors or head(s) of the organisation at such frequency as may be stipulated by the board of\ndirectors or head(s) of the organization but not less than once in a year."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-2",
+   "ref": "Schedule C, para 2",
+   "heading": "",
+   "chapter": "",
+   "page": 68,
+   "text": "2. All information shall be handled within the organisation on a need-to-know basis and no\nunpublished price sensitive information shall be communicated to any person except in\nfurtherance of legitimate purposes, performance of duties or discharge of legal obligations. The\ncode of conduct shall contain norms for appropriate Chinese Wall procedures, and processes for\npermitting any designated person to “cross the wall”."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-3",
+   "ref": "Schedule C, para 3",
+   "heading": "",
+   "chapter": "",
+   "page": 68,
+   "text": "3. Designated persons and immediate relatives of designated persons in the organisation shall be\ngoverned by an internal code of conduct governing dealing in securities."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-4",
+   "ref": "Schedule C, para 4",
+   "heading": "",
+   "chapter": "",
+   "page": 69,
+   "text": "4. Designated persons may execute trades subject to compliance with these regulations. Trading\nby designated persons shall be subject to pre- clearance by the compliance officer(s), if the value\nof the proposed trades is above such thresholds as the board of directors or head(s) of the\norganisation may stipulate."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-5",
+   "ref": "Schedule C, para 5",
+   "heading": "",
+   "chapter": "",
+   "page": 69,
+   "text": "5. The compliance officer shall confidentially maintain a list of such securities as a “restricted\nlist” which shall be used as the basis for approving or rejecting applications for pre-clearance of\ntrades."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-6",
+   "ref": "Schedule C, para 6",
+   "heading": "",
+   "chapter": "",
+   "page": 69,
+   "text": "6. Prior to approving any trades, the compliance officer shall seek declarations to the effect that\nthe applicant for pre-clearance is not in possession of any unpublished price sensitive\ninformation. He shall also have regard to whether any such declaration is reasonably capable of\nbeing rendered inaccurate."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-7",
+   "ref": "Schedule C, para 7",
+   "heading": "",
+   "chapter": "",
+   "page": 69,
+   "text": "7. The code of conduct shall specify any reasonable timeframe, which in any event shall not be\nmore than seven trading days, within which trades that have been pre-cleared have to be\nexecuted by the designated person, failing which fresh pre-clearance would be needed for the\ntrades to be executed."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-8",
+   "ref": "Schedule C, para 8",
+   "heading": "",
+   "chapter": "",
+   "page": 69,
+   "text": "8. The code of conduct shall specify the period, which in any event shall not be less than six\nmonths, within which a designated person who is a connected person of the listed company and\nis permitted to trade in the securities of such listed company, shall not execute a contra trade.\n125[In case of dealing in the units of mutual funds, the code of conduct shall specify the\nperiod, which in any event shall not be less than two months, within which a Designated\nPerson who is a connected person of the mutual fund/asset management company/trustees and is\npermitted to trade in the units of such mutual fund, shall not execute a contra trade.] The\ncompliance officer may be empowered to grant relaxation from strict application of such\nrestriction for reasons to be recorded in writing provided that such relaxation does not violate\n\nthese regulations. Should a contra trade be executed, inadvertently or otherwise, in violation of\nsuch a restriction, the profits from such trade shall be liable to be disgorged for remittance to the\nBoard for credit to the Investor Protection and Education Fund administered by the Board under\nthe Act.\nProvided that this shall not be applicable for trades pursuant to exercise of stock options."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-9",
+   "ref": "Schedule C, para 9",
+   "heading": "Provided that this shall not be applicable for trades pursuant to exercise of stock options",
+   "chapter": "",
+   "page": 70,
+   "text": "9. The code of conduct shall stipulate such formats as the board of directors or head(s) of the\norganisation (or committee constituted in this regard) deems necessary for making applications\nfor pre-clearance, reporting of trades executed, reporting of decisions not to trade after securing\npre-clearance, and for reporting level of holdings in securities at such intervals as may be\ndetermined as being necessary to monitor compliance with these regulations."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-10",
+   "ref": "Schedule C, para 10",
+   "heading": "",
+   "chapter": "",
+   "page": 70,
+   "text": "10. 126[Without prejudice to the power of the Board under the Act, the code of conduct shall\nstipulate the sanctions and disciplinary actions, including wage freeze, suspension, recovery, etc.,\nthat may be imposed, by the intermediary or fiduciary required to formulate a code of conduct\nunder sub-regulation (1) and sub-regulation (2) of regulation 9, for the contravention of the code\nof conduct. Any amount collected under this clause shall be remitted to the Board for credit to\nthe Investor Protection and Education Fund administered by the Board under the Act.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-11",
+   "ref": "Schedule C, para 11",
+   "heading": "",
+   "chapter": "",
+   "page": 70,
+   "text": "11. The code of conduct shall specify that in case it is observed by the intermediary or fiduciary\nrequired to formulate a code of conduct under sub-regulation (1) or sub-regulation (2) of\nregulation 9, respectively, that there has been a violation of these regulations, such intermediary\nor fiduciary shall 127[promptly inform the stock exchange(s) where the concerned securities are\ntraded, in such form and such manner as may be specified by the Board from time to time].\n\n128[11A. In case of dealing in the units of mutual funds, the code of conduct shall specify that in\ncase it is observed by the intermediary or fiduciary required to formulate a code of conduct under\nsub-regulation (2) of regulation 5F, that there has been a violation of these regulations, such\nintermediary or fiduciary shall promptly inform the same to the stock exchange(s) in such form\nand such manner as may be specified by the Board from time to time.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-12",
+   "ref": "Schedule C, para 12",
+   "heading": "",
+   "chapter": "",
+   "page": 71,
+   "text": "12. All designated persons shall be required to disclose name and Permanent Account Number or\nany other identifier authorized by law of the following to the intermediary or fiduciary on an\nannual basis and as and when the information changes:\na) immediate relatives\nb) persons with whom such designated person(s) shares a material financial relationship\nc) Phone, mobile, and cell numbers which are used by them\nIn addition, names of 129[educational] institutions from which designated persons have\n130[graduated] and names of their past employers shall also be disclosed on a one time basis.\nExplanation – the term “material financial relationship” shall mean a relationship in which one\nperson is a recipient of any kind of payment such as by way of a loan or gift 131[from a\ndesignated person] during the immediately preceding twelve months, equivalent to at least 25%\n132[of the annual income of such designated person] but shall exclude relationships in which the\npayment is based on arm’s length transactions."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-c-para-13",
+   "ref": "Schedule C, para 13",
+   "heading": "",
+   "chapter": "",
+   "page": 71,
+   "text": "13. Intermediaries and fiduciaries shall have a process for how and when people are brought\n‘inside’ on sensitive transactions. Individuals should be made aware of the duties and\nresponsibilities attached to the receipt of Inside Information, and the liability that attaches to\nmisuse or unwarranted use of such information.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d",
+   "ref": "Schedule D",
+   "heading": "",
+   "chapter": "",
+   "page": 72,
+   "text": "[See regulation 7B]\nForm for Informant’s Voluntary Information Disclosure to be submitted to the Board.\nNote: For submission of information through a legal representative, the redacted copy of\nthe Form expunging information that may identify the Informant shall be submitted by\nthe legal representative without expunging any information relating to the legal\nrepresentative and the details relating to the violation of 134[insider trading laws].\n*Indicates that the required field is non-mandatorily, remaining fields are mandatory\nI. PERSONAL INFORMATION OF THE INFORMANT\nA.INDIVIDUAL 1:\nLast\nName:…………………\nFirst\nName:…………………\nTitle:………………\nAddress: City / State: PIN:\nTelephone (with State\nCode):\nMobile: E-Mail address:\nEmployment Details*: Permanent Account Number, if\navailable:\nII. LEGAL REPRESENTATIVE (where applicable)\nLast\nName:………………\nFirst\nName:……………………\nTitle:………………\nFirm Name (if not self-employed):\nContact address : City / State: PIN:\nResidence address: City / State: PIN:\n\nTelephone (with State\nCode):\nMobile: E-Mail address:\nBar Council Enrolment\nNumber:"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-1",
+   "ref": "Schedule D, para 1",
+   "heading": "III SUBMISSION OF ORIGINAL INFORMATION",
+   "chapter": "",
+   "page": 73,
+   "text": "1. Is it a violation of 135[insider trading laws]? Yes / No"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-2",
+   "ref": "Schedule D, para 2",
+   "heading": "",
+   "chapter": "",
+   "page": 73,
+   "text": "2. If yes to question (1), please describe the type of violation:"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-3",
+   "ref": "Schedule D, para 3",
+   "heading": "",
+   "chapter": "",
+   "page": 73,
+   "text": "3. Has the violation: Occurred / Occurring / Potential to occur in future"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-4",
+   "ref": "Schedule D, para 4",
+   "heading": "",
+   "chapter": "",
+   "page": 73,
+   "text": "4. If the violation has occurred, date of occurrence: dd/mm/yy\n(in case exact date is not known, an approximate period may be entered)"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-5",
+   "ref": "Schedule D, para 5",
+   "heading": "",
+   "chapter": "",
+   "page": 73,
+   "text": "5. Have the individual(s) or their representatives had any prior\ncommunication(s) or representations with the Board concerning this matter?"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-6",
+   "ref": "Schedule D, para 6",
+   "heading": "Yes (Details thereof) / No",
+   "chapter": "",
+   "page": 73,
+   "text": "6. Does this violation relate to an entity of which the individual is or was an\nofficer, director, counsel, employee, consultant or contractor? Yes (Details\nthereof) / No"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-7",
+   "ref": "Schedule D, para 7",
+   "heading": "",
+   "chapter": "",
+   "page": 73,
+   "text": "7. If yes to question (6), was the original information submitted first to your"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-8",
+   "ref": "Schedule D, para 8",
+   "heading": "Head or internal legal and compliance office? Yes / No",
+   "chapter": "",
+   "page": 73,
+   "text": "8. If yes question (7), then please provide,"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-9",
+   "ref": "Schedule D, para 9",
+   "heading": "Date of submission of original information: dd/mm/yy",
+   "chapter": "",
+   "page": 73,
+   "text": "9. 136[Please describe in detail how the information submitted by you\nconstitutes a violation of insider trading laws. The details must include\nspecific information with respect to:\n(i) details of the securities in which insider trading is alleged;\n(ii) the unpublished price sensitive information based on which insider\ntrading is alleged;\n(iii) date on which the unpublished price sensitive information was made\n\npublic;\n(iv) details of circumstances/evidence leading to possession of\nunpublished price sensitive information by the alleged violator(s);\n(v) details of insiders/suspects and their trades (i.e. purchase/sale and\nquantity purchased/sold) along with dates/period of trades.]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-10",
+   "ref": "Schedule D, para 10",
+   "heading": "",
+   "chapter": "",
+   "page": 74,
+   "text": "10. What facts or supporting material is your allegation based on?\n137[Please include self-certified copies of all the relevant documents.]\nPlease attach any additional documents to this form, if necessary."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-11",
+   "ref": "Schedule D, para 11",
+   "heading": "Please attach any additional documents to this form, if necessary",
+   "chapter": "",
+   "page": 74,
+   "text": "11. Identify any documents or other information in your submission that you\nbelieve could reasonably be expected to reveal your identity and explain the\nbasis for your belief that your identity would be revealed if the documents\nwere disclosed to a third party."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-d-para-12",
+   "ref": "Schedule D, para 12",
+   "heading": "",
+   "chapter": "",
+   "page": 74,
+   "text": "12. Provide details of connection amongst the Informant, the company whose\nsecurities are involved and the person against whom information is being\nprovided:\nIV. DECLARATION\nI/we hereby declare that,-\nA. I/we have read and understood the Securities and Exchange Board of\nIndia (Prohibition of Insider Trading) Regulations, 2015;\nB. I/we accept that mere furnishing of information by me/us does not\nby itself confer on me/us right to get reward and that I/we may not\nget any Reward at all. I/we would be bound by the decisions that the\nauthority competent to grant reward may take;\nC. I/we accept that the Securities and Exchange Board of India is under\nno obligation to enter into any correspondence regarding action or\ninaction taken as a result of my/our information.\n\nD. I/we accept that the reward would be an ex-gratia payment which,\nsubject to the Securities and Exchange Board of India (Prohibition of\nInsider Trading) Regulations, 2015, shall be granted at the absolute\ndiscretion of the competent authority. The decision of the authority\nshall be acceptable to me/us and I/we shall not challenge it in any\nlitigation, appeal, adjudication, etc.\nE. In the event of my/our death before the reward us paid to me/us, it\nmay be paid to …………. (Details of nominee)\nF. I/we declare that the information contained herein is true, correct\nand complete to the best of my/our knowledge and belief and not\nobtained from the categories of persons indicated in sub-regulation\n(2) and sub-regulation (6) of regulation 7G of the Securities and\nExchange Board of India (Prohibition of Insider Trading)\nRegulations, 2015 and agree to indemnify the Board in case it is not\nso found. I/we fully understand that I/we may be subject to action\nunder securities laws as well as Section 182 of the Indian Penal\nCode, 1860 (45 of 1860) and ineligible for Reward if, in my/our\nsubmission of information or in any other dealings with the Board,\nI/we knowingly and wilfully make any false, fictitious, or fraudulent\nstatements or representations, or use any false writing or document\nknowing that the writing or document contains any false, fictitious,\nor fraudulent statement.\nSignature:……………………………. Date: dd/mm/yy\nPlace:\nV. CERTIFICATE BY LEGAL REPRESENTATIVE (where the\ninformation is submitted through legal representative)\n\nI hereby certify as follows,-\n(a) I have reviewed the completed and signed Voluntary\nInformation Disclosure Form for completeness and accuracy\nand the information contained therein is true, correct and\ncomplete to the best of my knowledge;\n(b) I have irrevocable consent from the Declarant, to provide to\nthe Securities and Exchange Board of India, the original\nVoluntary Information Disclosure Form in the event of a\nrequest for it from the Securities and Exchange Board of\nIndia due to concerns that the Informant has not complied\nwith these regulations or where the Securities and Exchange\nBoard of India requires the said information for the purpose\nof verification for declaring any gratuitous reward to the\nInformant or where the Securities and Exchange Board of\nIndia determines that it is necessary to seek such information\nto accomplish the purpose of the Securities and Exchange\nBoard of India Act including for the protection of investors,\nsharing with foreign securities regulators and foreign and\nIndian law enforcement agencies, etc.;\n(c) I am and shall continue to be legally obligated to provide the\noriginal Voluntary Information Disclosure Form without\ndemur within seven (7) calendar days of receiving such\nrequest from the Securities and Exchange Board of India.\nSignature:……………………………. Date: dd/mm/yy\nPlace:\n]"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-e",
+   "ref": "Schedule E",
+   "heading": "",
+   "chapter": "",
+   "page": 77,
+   "text": "[See regulations 7D and 7E]\nForm for Informant’s Reward Claim to be submitted to the Board within the time\nspecified in the intimation of prima facie eligibility to receive an Informant Reward.\nAll fields are mandatory\nI. PERSONAL INFORMATION\nA. Informant:\nLast name:--------------------- First Name:------------------------ Title:-----------------\nAddress: City / State: PIN:\nTelephone (with State code): Mobile: E-Mail Address:\nEmployment Details: Permanent Account Number:\nII ORIGINAL INFORMATION SUBMITTED\nOnline Acknowledgment Receipt Number:\n(Annex Original Form for Voluntary Information Disclosure, if not yet submitted to\nSecurities and Exchange Board of India)\nSubject matter of submission: Date of submission: dd/mm/20\nCase Name: SEBI Order No.: Date: dd/mm/20\nIII CONSIDERATION FOR REWARD\nProvide any material information that may be relevant in light of the criteria for\ndetermining the amount of Reward or denial thereof. Include any supporting documents\nif necessary.\nIV DECLARATION BY INFORMANT\n\nI/we hereby declare that,-\nA. I/we have read and understood the Securities and Exchange Board of\nIndia (Prohibition of Insider Trading) Regulations, 2015;\nB. I/we accept that mere furnishing of information by me/us does not by\nitself confer on me/us right to get reward and that I/we may not get any\nReward at all. I/we would be bound by the decisions that the authority\ncompetent to grant reward may take;\nC. I/we accept that the Securities and Exchange Board of India is under no\nobligation to pay any reward or enter into any correspondence regarding\naction or inaction taken as a result of this communication.\nD. I/we accept that the reward would be an ex-gratia payment which,\nsubject to the Securities and Exchange Board of India Prohibition of\nInsider Trading) Regulations, 2015, shall be granted at the absolute\ndiscretion of the competent authority. The decision of the authority shall\nbe acceptable to me/us and I/we shall not challenge it in any litigation,\nappeal, adjudication, etc.\nE. In the event of my/our death before the reward is paid to me/us, it may\nbe paid to …………. (Details of nominee)\nF. I/we declare that the information contained herein is true, correct and\ncomplete to the best of my/our knowledge and belief and not obtained\nfrom the categories of persons indicated in sub-regulation (2) and sub-\nregulation (6) of regulation 7G of the Securities and Exchange Board of\nIndia (Prohibition of Insider Trading) Regulations, 2015 and agree to\nindemnify the Board in case it is not so found. I/we fully understand that\nI/we may be subject to action under securities laws as well as Section\n182 of the Indian Penal Code, 1860 (45 of 1860) and ineligible for an\nInformant Reward if, in my/our submission of information or in any\n\nother dealings with the Board, I/we knowingly and wilfully make any\nfalse, fictitious, or fraudulent statements or representations, or use any\nfalse writing or document knowing that the writing or document\ncontains any false, fictitious, or fraudulent statement.\nSignature:……………………………. Date: dd/mm/yy\nPlace:\nV CERTIFICATE BY LEGAL REPRESENTATIVE (where applicable)\nI hereby certify as follows,-\n(a) I have reviewed the completed and signed claim form for\ncompleteness and accuracy and the information contained\ntherein is true, correct and complete to the best of my\nknowledge; and\n(b) The declarant is the person who signed the original Voluntary\nInformation Disclosure Form.\nSignature:……………………………. Date: dd/mm/yy\nPlace:\n]\nSd/-\nU. K. SINHA\nCHAIRMAN\nSECURITIES AND EXCHANGE BOARD OF INDIA\n\nFootnote:"
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-e-para-1",
+   "ref": "Schedule E, para 1",
+   "heading": "",
+   "chapter": "",
+   "page": 80,
+   "text": "1. The Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations,\n2015 was published in the Gazette of India on January 15, 2015 vide No. LAD-\nNRO/GN/2014-15/21/85."
+  },
+  {
+   "id": "sebi-pit-regulations-2015#schedule-e-para-2",
+   "ref": "Schedule E, para 2",
+   "heading": "NRO/GN/2014-15/21/85",
+   "chapter": "",
+   "page": 80,
+   "text": "2. The Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations,\n2015 was subsequently amended on, -\ni. December 31, 2018 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Amendment) Regulations, 2018 vide No. SEBI/LAD-NRO/GN/2018/59.\nii. January 21, 2019 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Amendment) Regulations, 2019 vide No. SEBI/LAD-NRO/GN/2019/02.\niii. July 25, 2019 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Second Amendment) Regulations, 2019 vide No. SEBI/LAD-\nNRO/GN/2019/23.\niv. September 17, 2019 by the Securities and Exchange Board of India (Prohibition of\nInsider Trading) (Third Amendment) Regulations, 2019 vide No. SEBI/LAD-\nNRO/GN/2019/32.\nv. July 17, 2020 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Amendment) Regulations, 2020 vide No. SEBI/LAD-NRO/GN/2020/23.\nvi. October 29, 2020 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Second Amendment) Regulations, 2020 vide No. SEBI/LAD-\nNRO/GN/2020/38.\nvii. April 26, 2021 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Amendment) Regulations, 2021 vide No. SEBI/LAD-NRO/GN/2021/17.\nviii. August 05,2021 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Second Amendment) Regulations, 2021 vide No. SEBI/LAD-\nNRO/GN/2021/37.\nix. November 24, 2022 by the Securities and Exchange Board of India (Prohibition of\nInsider Trading) (Amendment) Regulations, 2022 vide No. SEBI/LAD-\nNRO/GN/2022/108.\n\nx. May 17, 2024 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Amendment) Regulations, 2024 vide No. SEBI/LAD-NRO/GN/2024/181.\nxi. June 25, 2024 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Second Amendment) Regulations, 2024 vide No. SEBI/LAD-\nNRO/GN/2024/184.\nxii. December 6, 2024 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Third Amendment) Regulations, 2024 vide No. SEBI/LAD-\nNRO/GN/2024/216.\nxiii. March 12, 2025 by the Securities and Exchange Board of India (Prohibition of Insider\nTrading) (Amendment) Regulations, 2025 vide No. SEBI/LAD-NRO/GN/2025/235."
+  }
+ ]
+}
