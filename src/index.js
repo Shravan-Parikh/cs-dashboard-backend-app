@@ -8,6 +8,7 @@ import announcementRoutes from './routes/announcements.js';
 import complianceRoutes from './routes/compliance.js';
 import lawRoutes from './routes/law.js';
 import workspaceRoutes from './routes/workspace.js';
+import taskRoutes from './routes/tasks.js';
 import { pdfRouter, exportRouter } from './routes/export.js';
 
 assertConfig();
@@ -60,6 +61,7 @@ app.use('/api', requireAuth, exportRouter);
 // Persistent per-user data (watchlist, saved views) + admin views. These carry
 // their own requireAuth so the admin guard can run straight after it.
 app.use('/api', workspaceRoutes);
+app.use('/api', taskRoutes);
 
 app.use((_req, res) => res.status(404).json({ error: 'Not found' }));
 

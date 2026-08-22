@@ -55,6 +55,14 @@ service cloud.firestore {
       allow read, write: if isOwner(uid);
     }
 
+    match /cs_tasks/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    match /cs_meetings/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
     // Usage log. Users may only append events stamped with their own uid, and
     // may never read, edit or delete them. Admins read for pilot feedback.
     match /cs_activity/{eventId} {
