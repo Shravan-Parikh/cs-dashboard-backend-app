@@ -173,15 +173,122 @@ export const ORDER_TYPE_LIST = ORDER_TYPES.map(({ id, label }) => ({ id, label }
 export function deriveMeta({ title, url, text }) {
   const { orderType, orderTypeLabel } = classify(title);
   const { penalty, penaltyDetected } = extractPenalty(text);
+  const fromUrl = dateFromUrl(url);
+  const orderDate = extractOrderDate(text);
   return {
-    ...classify(title),
+    orderType,
+    orderTypeLabel,
     authority: authorityOf(orderType),
-    ...dateFromUrl(url),
+    ...fromUrl,
+    // The precise signed date where we could read it; the URL month is only a
+    // fallback so sorting still works.
+    orderDate,
+    dateExact: !!orderDate,
+    orderNo: extractOrderNumber(text, title),
     ...extractSubject(title),
     penalty,
     penaltyDetected,
     citations: extractCitations(text),
+    upsi: extractUpsi(text),
     outcome: extractOutcome(text, penalty),
-    orderTypeLabel,
   };
 }
+
+// ---------------------------------------------------------------------------
+// Fields a CS needs in order to actually *cite* a case
+// ---------------------------------------------------------------------------
+
+const MONTH_NAMES = {
+  january: 1, jan: 1, february: 2, feb: 2, march: 3, mar: 3, april: 4, apr: 4,
+  may: 5, june: 6, jun: 6, july: 7, jul: 7, august: 8, aug: 8,
+  september: 9, sep: 9, sept: 9, october: 10, oct: 10, november: 11, nov: 11,
+  december: 12, dec: 12,
+};
+
+const iso = (y, m, d) =>
+  y > 1990 && y < 2100 && m >= 1 && m <= 12 && d >= 1 && d <= 31
+    ? `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`
+    : '';
+
+function parseDate(raw) {
+  let m = /^([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})$/.exec(raw); // September 09, 2026
+  if (m) return iso(Number(m[3]), MONTH_NAMES[m[1].toLowerCase()] || 0, Number(m[2]));
+  m = /^(\d{1,2})\s+([A-Za-z]+),?\s+(\d{4})$/.exec(raw); // 13 August 2026
+  if (m) return iso(Number(m[3]), MONTH_NAMES[m[2].toLowerCase()] || 0, Number(m[1]));
+  m = /^(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{4})$/.exec(raw); // 13-08-2026 (dd first)
+  if (m) return iso(Number(m[3]), Number(m[2]), Number(m[1]));
+  return '';
+}
+
+/**
+ * The date the order was signed.
+ *
+ * A CS cannot cite "Sep 2026" in a board note, and the month in the URL is all
+ * the listing gives us. SEBI signs off with a "Place: … Date: …" block, so a
+ * date sitting next to "Place" is preferred; failing that the last dated line
+ * wins, since letterheads and quoted correspondence appear earlier in the text.
+ */
+export function extractOrderDate(text) {
+  const DATE = String.raw`([A-Za-z]+\s+\d{1,2},?\s+\d{4}|\d{1,2}\s+[A-Za-z]+,?\s+\d{4}|\d{1,2}[\/\-.]\d{1,2}[\/\-.]\d{4})`;
+  const near = new RegExp(`Place\\s*[:\\-][^\\n]{0,60}\\s*Dat(?:e|ed)\\s*[:\\-]?\\s*${DATE}`, 'i');
+  const hit = near.exec(text);
+  if (hit) {
+    const d = parseDate(hit[1].trim());
+    if (d) return d;
+  }
+  const all = [...text.matchAll(new RegExp(`Dat(?:e|ed)\\s*[:\\-]?\\s*${DATE}`, 'gi'))];
+  for (let i = all.length - 1; i >= 0; i--) {
+    const d = parseDate(all[i][1].trim());
+    if (d) return d;
+  }
+  return '';
+}
+
+/**
+ * The order's own reference number — how a CS actually refers to it
+ * ("Order/JS/YK/2026-27/32473", "Appeal No. 485 of 2022").
+ */
+export function extractOrderNumber(text, title) {
+  const head = text.slice(0, 12000);
+  const appeal = /Appeal\s+No\.?\s*:?\s*(\d+\s*(?:of|\/)\s*\d{4})/i.exec(`${title}\n${head}`);
+  if (appeal) return `Appeal No. ${appeal[1].replace(/\s*\/\s*/, ' of ').replace(/\s+/g, ' ')}`;
+  // Slash-delimited SEBI reference, optionally prefixed by its own label.
+  const ref = /\b((?:Order|SO|AO|ADJ|WTM|EFD|QJA)\s*[\/:]?\s*[A-Z0-9]{1,8}(?:\/[A-Z0-9\-]{1,14}){1,5})/.exec(head);
+  if (ref) return ref[1].replace(/\s*\/\s*/g, '/').replace(/^Order[:\/]?/i, 'Order/').trim();
+  return '';
+}
+
+/**
+ * What the unpublished price sensitive information actually was.
+ *
+ * The single most useful way for a CS to slice case law ("show me cases where
+ * the UPSI was unpublished results"). Matched only inside windows around a UPSI
+ * mention — scanning the whole order would tag anything that merely mentions a
+ * dividend somewhere in 40 pages.
+ */
+const UPSI_KINDS = [
+  { id: 'results', label: 'Financial results', match: /financial results|quarterly results|audited results|earnings/i },
+  { id: 'ma', label: 'Merger / acquisition', match: /merger|amalgamation|acquisition|scheme of arrangement|takeover|slump sale/i },
+  { id: 'dividend', label: 'Dividend', match: /dividend/i },
+  { id: 'fundraise', label: 'Fund raising', match: /preferential (?:issue|allotment)|qip|rights issue|fund rais|debenture/i },
+  { id: 'order-win', label: 'Order win / contract', match: /order win|receipt of (?:an? )?order|letter of award|new contract|bagg/i },
+  { id: 'kmp', label: 'Change in KMP', match: /resignation|appointment of (?:the )?(?:managing director|md|ceo|cfo|chairman)/i },
+  { id: 'buyback', label: 'Buyback', match: /buy[- ]?back/i },
+  { id: 'stake', label: 'Open offer / stake change', match: /open offer|stake sale|divest|pledge/i },
+  { id: 'restructuring', label: 'Restructuring / insolvency', match: /insolvency|nclt|restructuring|resolution plan/i },
+];
+
+export function extractUpsi(text) {
+  const found = new Set();
+  const cue = /unpublished price sensitive information|\bUPSI\b/gi;
+  let m;
+  let windows = 0;
+  while ((m = cue.exec(text)) && windows < 400) {
+    windows++;
+    const w = text.slice(Math.max(0, m.index - 350), m.index + 450);
+    for (const k of UPSI_KINDS) if (k.match.test(w)) found.add(k.id);
+  }
+  return [...found];
+}
+
+export const UPSI_LIST = UPSI_KINDS.map(({ id, label }) => ({ id, label }));

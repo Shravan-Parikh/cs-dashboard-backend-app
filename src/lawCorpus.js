@@ -97,6 +97,35 @@ export function corpusStats() {
 }
 
 /**
+ * Look a provision up by its reference, e.g. "Regulation 4" or "Schedule B".
+ *
+ * This is not a text search and must not be one: `tokenize` drops "regulation"
+ * as a stopword and single digits as too short, so searching "regulation 4"
+ * yields an empty query and zero hits. A citation chip on a case order needs
+ * the actual clause, so it matches the chunk's own `ref` instead.
+ */
+export function lookupByRef(ref, { docIds = [], limit = 20 } = {}) {
+  const { chunks } = load();
+  const want = String(ref || '').trim().toLowerCase();
+  if (!want) return [];
+
+  const norm = (r) => r.toLowerCase().replace(/\s*\(part \d+ of \d+\)\s*$/, '').trim();
+  const pool = docIds.length ? chunks.filter((c) => docIds.includes(c.docId)) : chunks;
+
+  const exact = pool.filter((c) => norm(c.ref) === want);
+  const hits = exact.length > 0 ? exact : pool.filter((c) => norm(c.ref).startsWith(want));
+
+  return hits
+    .slice(0, limit)
+    .map(({ _text, _tokens, ...c }) => ({
+      ...c,
+      score: 0,
+      // No query to highlight, so lead with the opening of the clause.
+      snippet: c.text.length > 420 ? c.text.slice(0, 420).trim() + ' …' : c.text,
+    }));
+}
+
+/**
  * Search the corpus.
  * @param {string} query
  * @param {{topics?:string[], docIds?:string[], limit?:number}} opts

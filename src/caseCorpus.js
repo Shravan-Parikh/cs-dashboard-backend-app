@@ -19,7 +19,7 @@ import {
   meetsTermFloor,
   snippet,
 } from './textSearch.js';
-import { ORDER_TYPE_LIST, OUTCOMES } from './caseMeta.js';
+import { ORDER_TYPE_LIST, OUTCOMES, UPSI_LIST } from './caseMeta.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const FILE = join(__dirname, 'data', 'cases', 'cases.json');
@@ -53,6 +53,10 @@ function load() {
   const cases = (raw.cases || []).map((c) => ({
     ...c,
     band: bandOf(c.penalty || 0),
+    // Sort on the signed date where we have it. SEBI sometimes publishes an
+    // order a month or two after signing, so the URL month is the *publication*
+    // month and would order the list wrongly.
+    _sort: c.orderDate || c.period || '',
     _lower: `${c.title}\n${c.text || ''}`.toLowerCase(),
   }));
 
@@ -74,7 +78,7 @@ function tokensOf(c) {
 
 /** Strip heavy/internal fields for list responses. */
 const publicCase = (c) => {
-  const { text, _lower, ...rest } = c;
+  const { text, _lower, _sort, ...rest } = c;
   return rest;
 };
 
@@ -94,6 +98,12 @@ export function corpusStats() {
     authorities: [...new Set(cases.map((c) => c.authority))].sort(),
     orderTypes: ORDER_TYPE_LIST.filter((t) => cases.some((c) => c.orderType === t.id)),
     outcomes: OUTCOMES.filter((o) => cases.some((c) => c.outcome === o.id)),
+    upsi: UPSI_LIST.filter((u) => cases.some((c) => (c.upsi || []).includes(u.id))).map((u) => ({
+      ...u,
+      count: cases.filter((c) => (c.upsi || []).includes(u.id)).length,
+    })),
+    withExactDate: cases.filter((c) => c.dateExact).length,
+    withOrderNo: cases.filter((c) => c.orderNo).length,
     penaltyBands: PENALTY_BANDS.filter((b) => cases.some((c) => c.band === b.id)),
     citations: [...citations.entries()]
       .sort((a, b) => b[1] - a[1])
@@ -105,7 +115,7 @@ export function corpusStats() {
 export function getCase(id) {
   const c = load().cases.find((x) => x.id === id);
   if (!c) return null;
-  const { _lower, ...rest } = c;
+  const { _lower, _sort, ...rest } = c;
   return rest; // includes full text — this is the detail view
 }
 
@@ -118,6 +128,12 @@ function applyFilters(cases, f) {
     if (f.bands?.length && !f.bands.includes(c.band)) return false;
     if (f.citations?.length && !f.citations.some((x) => (c.citations || []).includes(x))) {
       return false;
+    }
+    if (f.upsi?.length && !f.upsi.some((x) => (c.upsi || []).includes(x))) return false;
+    // Cross-reference against a watchlist: match any of several company names.
+    if (f.companies?.length) {
+      const hay = `${c.company} ${c.subject} ${c.title}`.toLowerCase();
+      if (!f.companies.some((n) => n && hay.includes(n.toLowerCase()))) return false;
     }
     if (f.company) {
       const needle = f.company.toLowerCase();
@@ -140,13 +156,17 @@ export function queryCases({
   outcomes = [],
   bands = [],
   citations = [],
+  upsi = [],
+  companies = [],
   company = '',
   sort = 'recent',
   limit = 30,
   offset = 0,
 } = {}) {
   const { cases, idf, N } = load();
-  const filters = { years, authorities, orderTypes, outcomes, bands, citations, company };
+  const filters = {
+    years, authorities, orderTypes, outcomes, bands, citations, upsi, companies, company,
+  };
   let pool = applyFilters(cases, filters);
 
   const term = String(q || '').trim();
@@ -180,9 +200,9 @@ export function queryCases({
     if (sort === 'penalty') {
       ranked.sort((a, b) => (b.c.penalty || 0) - (a.c.penalty || 0));
     } else if (sort === 'oldest') {
-      ranked.sort((a, b) => (a.c.period || '').localeCompare(b.c.period || ''));
+      ranked.sort((a, b) => (a.c._sort || '').localeCompare(b.c._sort || ''));
     } else if (sort === 'recent' || !term) {
-      ranked.sort((a, b) => (b.c.period || '').localeCompare(a.c.period || ''));
+      ranked.sort((a, b) => (b.c._sort || '').localeCompare(a.c._sort || ''));
     }
   }
 
@@ -203,6 +223,7 @@ export function queryCases({
       orderTypes: countBy(pool, (c) => c.orderType),
       outcomes: countBy(pool, (c) => c.outcome),
       bands: countBy(pool, (c) => c.band),
+      upsi: countByMulti(pool, (c) => c.upsi || []),
     },
   };
 }
@@ -213,5 +234,11 @@ function countBy(items, key) {
     const k = key(it);
     if (k) m[k] = (m[k] || 0) + 1;
   }
+  return m;
+}
+
+function countByMulti(items, keys) {
+  const m = {};
+  for (const it of items) for (const k of keys(it)) if (k) m[k] = (m[k] || 0) + 1;
   return m;
 }

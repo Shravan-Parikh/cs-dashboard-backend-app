@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import {
+  lookupByRef,
   listDocuments,
   getDocument,
   getChunk,
@@ -51,6 +52,18 @@ router.get('/law/search', (req, res) => {
       corpus: corpusStats(),
     },
   });
+});
+
+/**
+ * GET /api/law/lookup?ref=Regulation%204
+ * Jump straight to a provision by reference — used by citation chips on case
+ * orders, where a fuzzy text search would return nothing useful.
+ */
+router.get('/law/lookup', (req, res) => {
+  const ref = String(req.query.ref || '').trim();
+  if (!ref) return res.status(400).json({ error: 'A reference is required' });
+  const results = lookupByRef(ref, { docIds: csv(req.query.docs) });
+  res.json({ ref, results, meta: { total: results.length } });
 });
 
 /** One document with all of its chunks, for reading straight through. */

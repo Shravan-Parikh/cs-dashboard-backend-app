@@ -21,8 +21,8 @@ router.get('/cases/facets', (_req, res) => {
 
 /**
  * GET /api/cases
- *   ?q= &years= &authorities= &orderTypes= &outcomes= &bands= &citations=
- *   &company= &sort=recent|relevance|penalty|oldest &limit= &offset=
+ *   ?q= &years= &authorities= &orderTypes= &outcomes= &bands= &citations= &upsi=
+ *   &companies= (watchlist cross-reference) &company= &sort= &limit= &offset=
  *
  * Browsing and searching are the same endpoint: without `q` you get the filtered
  * set newest-first, with `q` you get ranked results carrying a snippet. Order
@@ -41,6 +41,9 @@ router.get('/cases', (req, res) => {
     outcomes: csv(req.query.outcomes),
     bands: csv(req.query.bands),
     citations: csv(req.query.citations),
+    upsi: csv(req.query.upsi),
+    // Names come from the caller's watchlist, so the list is bounded there.
+    companies: csv(req.query.companies).slice(0, 60),
     company: String(req.query.company || '').trim().slice(0, 120),
     sort: ['recent', 'relevance', 'penalty', 'oldest'].includes(String(req.query.sort))
       ? String(req.query.sort)

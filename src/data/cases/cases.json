@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-09-10T19:21:42.229Z",
+ "builtAt": "2026-09-10T19:41:35.908Z",
  "range": {
   "from": 2015,
   "to": 2026
@@ -43,7 +43,13 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2026-09-09",
+   "dateExact": true,
+   "orderNo": "Order/JS/RJ/2026-27/32711-32712",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "b9c7096c687941b0",
@@ -72,7 +78,14 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2026-08-13",
+   "dateExact": true,
+   "orderNo": "WTM/KV/IVD-2/ID18/32658/2026-27",
+   "upsi": [
+    "dividend",
+    "results"
+   ]
   },
   {
    "id": "882d3e1b939fc5c1",
@@ -101,7 +114,15 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2026-07-07",
+   "dateExact": true,
+   "orderNo": "Order/JS/YK/2026-27/32473",
+   "upsi": [
+    "ma",
+    "fundraise",
+    "results"
+   ]
   },
   {
    "id": "e1899bf3b0e15241",
@@ -135,7 +156,14 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2026-05-13",
+   "dateExact": true,
+   "orderNo": "WTM/KV/IVD-1/ID16/32405/2026-27",
+   "upsi": [
+    "stake",
+    "ma"
+   ]
   },
   {
    "id": "aa3d8b0f9f0aaf08",
@@ -162,7 +190,13 @@
     "SDD (Reg. 3(5))",
     "SEBI Act s.15HB"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2026-03-27",
+   "dateExact": true,
+   "orderNo": "SO/JS/RJ/2025-26/8480",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "7743a30e99d8fd03",
@@ -193,7 +227,15 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-12-12",
+   "dateExact": true,
+   "orderNo": "Order/JS/YK/2025-26",
+   "upsi": [
+    "results",
+    "ma",
+    "fundraise"
+   ]
   },
   {
    "id": "9a4ef311dddc80d8",
@@ -226,7 +268,11 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-09-30",
+   "dateExact": true,
+   "orderNo": "Order/JS/VC/2025-26/31695",
+   "upsi": []
   },
   {
    "id": "1c27c1c6e3c8ce67",
@@ -257,7 +303,13 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-09-23",
+   "dateExact": true,
+   "orderNo": "",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "3e7664f550d48e05",
@@ -284,7 +336,13 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-09-23",
+   "dateExact": true,
+   "orderNo": "SO/JS/VC/2025-26/8432",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "be944004509a0b56",
@@ -309,7 +367,11 @@
    "citations": [
     "PIT Reg. 2"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2025-08-08",
+   "dateExact": true,
+   "orderNo": "SO/PSD/2025-26/7399",
+   "upsi": []
   },
   {
    "id": "90a5f74c52b4c953",
@@ -335,7 +397,11 @@
     "PIT Reg. 2",
     "PIT Reg. 4"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2025-08-08",
+   "dateExact": true,
+   "orderNo": "SO/PSD/2025-26/7805",
+   "upsi": []
   },
   {
    "id": "6d0db0ac286badc2",
@@ -363,7 +429,11 @@
     "SEBI Act s.15HB",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-08-19",
+   "dateExact": true,
+   "orderNo": "Order/JS/YK/2025-26/31599",
+   "upsi": []
   },
   {
    "id": "8d1d706c169510a0",
@@ -394,7 +464,16 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-08-26",
+   "dateExact": true,
+   "orderNo": "",
+   "upsi": [
+    "dividend",
+    "results",
+    "ma",
+    "buyback"
+   ]
   },
   {
    "id": "d0166cd52361785f",
@@ -425,7 +504,17 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-07-03",
+   "dateExact": true,
+   "orderNo": "",
+   "upsi": [
+    "ma",
+    "restructuring",
+    "results",
+    "dividend",
+    "kmp"
+   ]
   },
   {
    "id": "09224a54079df033",
@@ -453,7 +542,14 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-07-29",
+   "dateExact": true,
+   "orderNo": "",
+   "upsi": [
+    "ma",
+    "dividend"
+   ]
   },
   {
    "id": "7f88b62f90c41243",
@@ -480,7 +576,11 @@
     "PIT Reg. 9",
     "SEBI Act s.15HB"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-07-30",
+   "dateExact": true,
+   "orderNo": "SO/AN/SM/2025-26/8339",
+   "upsi": []
   },
   {
    "id": "9325f711b63cfafa",
@@ -508,7 +608,11 @@
     "PIT Reg. 9",
     "SEBI Act s.15HB"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-03-06",
+   "dateExact": true,
+   "orderNo": "SO/AN/PR/2024-25/8146",
+   "upsi": []
   },
   {
    "id": "13bac4dfe1d44779",
@@ -540,7 +644,15 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2025-01-31",
+   "dateExact": true,
+   "orderNo": "WTM/AN/IVD-1/ID16/31148/2024-25",
+   "upsi": [
+    "results",
+    "order-win",
+    "ma"
+   ]
   },
   {
    "id": "6c7c32c95544fe4a",
@@ -567,7 +679,13 @@
     "PIT Reg. 3",
     "SEBI Act s.12A"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2024-08-20",
+   "dateExact": true,
+   "orderNo": "SO/PSD/2024-25/7729-31",
+   "upsi": [
+    "ma"
+   ]
   },
   {
    "id": "4cb9bdffca5e094e",
@@ -599,7 +717,17 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2024-11-22",
+   "dateExact": true,
+   "orderNo": "QJA/AA/IVD/ID15/30997/2024-25",
+   "upsi": [
+    "ma",
+    "stake",
+    "kmp",
+    "results",
+    "dividend"
+   ]
   },
   {
    "id": "9d5557ecb5a76c36",
@@ -626,7 +754,11 @@
     "PIT Schedule B",
     "SEBI Act s.15HB"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2024-10-01",
+   "dateExact": true,
+   "orderNo": "SO/BM/RK/2024-25/7678-7679",
+   "upsi": []
   },
   {
    "id": "8713b67390f8a450",
@@ -658,7 +790,13 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2024-09-09",
+   "dateExact": true,
+   "orderNo": "WTM/ASB/IVD-1/ID11/30744/2024-25",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "d0cf7effa2f80b23",
@@ -687,7 +825,16 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2024-07-25",
+   "dateExact": true,
+   "orderNo": "",
+   "upsi": [
+    "fundraise",
+    "results",
+    "ma",
+    "dividend"
+   ]
   },
   {
    "id": "1ca938c9f741056b",
@@ -715,7 +862,13 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2024-07-12",
+   "dateExact": true,
+   "orderNo": "SO/NH/RJ/2024-25/7617",
+   "upsi": [
+    "ma"
+   ]
   },
   {
    "id": "5854e0ac1a3fb233",
@@ -742,7 +895,13 @@
     "SEBI Act s.15HB",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2024-06-07",
+   "dateExact": true,
+   "orderNo": "Order/AN/RG/2024-25/30414",
+   "upsi": [
+    "restructuring"
+   ]
   },
   {
    "id": "bc19f3c500646adb",
@@ -769,7 +928,15 @@
     "PIT Reg. 9A",
     "SEBI Act s.11B"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2024-06-26",
+   "dateExact": true,
+   "orderNo": "SO/AN/EFD2/2024-25/7401",
+   "upsi": [
+    "results",
+    "ma",
+    "dividend"
+   ]
   },
   {
    "id": "00ec21d285816dd5",
@@ -799,7 +966,11 @@
     "SEBI Act s.15HB",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2024-05-14",
+   "dateExact": true,
+   "orderNo": "QJA/GR/IVD/ID10/30334/2024-25",
+   "upsi": []
   },
   {
    "id": "9e6c1fa782a65df9",
@@ -827,7 +998,14 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2024-04-30",
+   "dateExact": true,
+   "orderNo": "SO/GR/EFD2/2024-25/7437",
+   "upsi": [
+    "results",
+    "dividend"
+   ]
   },
   {
    "id": "8fd12411bf65176b",
@@ -859,7 +1037,13 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2024-03-28",
+   "dateExact": true,
+   "orderNo": "",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "c2dcecc0cd048c18",
@@ -892,7 +1076,16 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2023-10-12",
+   "dateExact": true,
+   "orderNo": "Order/PB/UR/2023-24/29524-29523",
+   "upsi": [
+    "results",
+    "fundraise",
+    "ma",
+    "dividend"
+   ]
   },
   {
    "id": "ba7c4bfb73f16e1c",
@@ -923,7 +1116,15 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2023-08-25",
+   "dateExact": true,
+   "orderNo": "Appeal No. 255 of 2020",
+   "upsi": [
+    "stake",
+    "ma",
+    "restructuring"
+   ]
   },
   {
    "id": "9794a2286c76224b",
@@ -955,7 +1156,15 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2023-07-12",
+   "dateExact": true,
+   "orderNo": "Order/GR/PU/2022-23/28059-28064",
+   "upsi": [
+    "results",
+    "stake",
+    "kmp"
+   ]
   },
   {
    "id": "797db1e6eeef3008",
@@ -988,7 +1197,14 @@
     "SEBI Act s.15HB",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2023-07-12",
+   "dateExact": true,
+   "orderNo": "Order/GR/HK/2023-24/28062-28064",
+   "upsi": [
+    "restructuring",
+    "stake"
+   ]
   },
   {
    "id": "8711f26f86bb3902",
@@ -1021,7 +1237,14 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2023-06-22",
+   "dateExact": true,
+   "orderNo": "WTM/ASB/IVD/ID4/27676/2023-24",
+   "upsi": [
+    "results",
+    "stake"
+   ]
   },
   {
    "id": "f8f21b2ca3bcd652",
@@ -1057,7 +1280,15 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2023-03-28",
+   "dateExact": true,
+   "orderNo": "QJA/VS/IVD/ID6/25067/2022-23",
+   "upsi": [
+    "results",
+    "ma",
+    "dividend"
+   ]
   },
   {
    "id": "3ae38c5346e82280",
@@ -1085,7 +1316,13 @@
     "PIT Reg. 4",
     "SEBI Act s.15G"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2023-03-28",
+   "dateExact": true,
+   "orderNo": "QJA/VS/IVD/ID6/25087/2022-23",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "48667f51d49bf6b6",
@@ -1111,7 +1348,11 @@
     "PIT Reg. 10",
     "PIT Reg. 2"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2023-03-27",
+   "dateExact": true,
+   "orderNo": "SO/VV/AS/2022-23/7001",
+   "upsi": []
   },
   {
    "id": "4b814fee62cb97be",
@@ -1141,7 +1382,13 @@
     "Pre-clearance",
     "Trading window"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2022-10-20",
+   "dateExact": true,
+   "orderNo": "Order/VV/NK/2022-23/20591",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "48dcc4f5390d302b",
@@ -1169,7 +1416,11 @@
     "SEBI Act s.15HB",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2022-08-29",
+   "dateExact": true,
+   "orderNo": "Order/JS/N",
+   "upsi": []
   },
   {
    "id": "c07cc117cfccea96",
@@ -1203,7 +1454,13 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2022-07-29",
+   "dateExact": true,
+   "orderNo": "Order/GR/HK/2022-23/18165-18169",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "a9e61095b54545e0",
@@ -1234,7 +1491,11 @@
     "SEBI Act s.12A",
     "SEBI Act s.15G"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2022-06-09",
+   "dateExact": true,
+   "orderNo": "WTM/SM/IVD/ID16/16958/2022-23",
+   "upsi": []
   },
   {
    "id": "eb419c2fd4b12c8b",
@@ -1262,7 +1523,14 @@
     "PIT Reg. 4",
     "SEBI Act s.12A"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2022-01-24",
+   "dateExact": true,
+   "orderNo": "WTM/SM/ISD/ISD",
+   "upsi": [
+    "results",
+    "ma"
+   ]
   },
   {
    "id": "3cf1823339584d98",
@@ -1290,7 +1558,15 @@
     "PIT Reg. 4",
     "SDD (Reg. 3(5))"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2022-03-28",
+   "dateExact": true,
+   "orderNo": "WTM/SM/ISD/15646/2021-22",
+   "upsi": [
+    "ma",
+    "fundraise",
+    "results"
+   ]
   },
   {
    "id": "51da0209c9ce0a45",
@@ -1313,7 +1589,11 @@
    "penalty": 0,
    "penaltyDetected": false,
    "citations": [],
-   "outcome": "unclear"
+   "outcome": "unclear",
+   "orderDate": "2022-02-18",
+   "dateExact": true,
+   "orderNo": "WTM/SM/IVD/ID6/15033/2021-22",
+   "upsi": []
   },
   {
    "id": "eed632aaae257ff7",
@@ -1339,7 +1619,14 @@
     "Contra trade",
     "PIT Reg. 2"
    ],
-   "outcome": "disposed"
+   "outcome": "disposed",
+   "orderDate": "2022-02-18",
+   "dateExact": true,
+   "orderNo": "WTM/SM/ISD/15029/2021-22",
+   "upsi": [
+    "results",
+    "stake"
+   ]
   },
   {
    "id": "3baa67c0d30db4d8",
@@ -1367,7 +1654,13 @@
     "PIT Reg. 4",
     "SEBI Act s.12A"
    ],
-   "outcome": "unclear"
+   "outcome": "unclear",
+   "orderDate": "2022-01-24",
+   "dateExact": true,
+   "orderNo": "Appeal No. 485 of 2022",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "7d4adbcfc31b179f",
@@ -1395,7 +1688,14 @@
     "SEBI Act s.12A",
     "Trading window"
    ],
-   "outcome": "unclear"
+   "outcome": "unclear",
+   "orderDate": "2021-12-13",
+   "dateExact": true,
+   "orderNo": "Appeal No. 782 of 2021",
+   "upsi": [
+    "ma",
+    "results"
+   ]
   },
   {
    "id": "ca65ee60b023110c",
@@ -1424,7 +1724,13 @@
     "SDD (Reg. 3(5))",
     "SEBI Act s.12A"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2021-09-27",
+   "dateExact": true,
+   "orderNo": "Appeal No. 668 of 2021",
+   "upsi": [
+    "ma"
+   ]
   },
   {
    "id": "fd408a06f022a434",
@@ -1454,7 +1760,13 @@
     "SDD (Reg. 3(5))",
     "SEBI Act s.12A"
    ],
-   "outcome": "unclear"
+   "outcome": "unclear",
+   "orderDate": "2021-09-15",
+   "dateExact": true,
+   "orderNo": "Appeal No. 689 of 2021",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "a87b7b8996b01e66",
@@ -1484,7 +1796,14 @@
     "SDD (Reg. 3(5))",
     "Trading window"
    ],
-   "outcome": "disposed"
+   "outcome": "disposed",
+   "orderDate": "2021-09-27",
+   "dateExact": true,
+   "orderNo": "WTM/MB/ISD/13536/2021-22",
+   "upsi": [
+    "results",
+    "ma"
+   ]
   },
   {
    "id": "c6ef68183b0921f8",
@@ -1511,7 +1830,14 @@
     "PIT Reg. 3",
     "SDD (Reg. 3(5))"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2020-08-19",
+   "dateExact": true,
+   "orderNo": "WTM/MB/ISD/13004/2021-22",
+   "upsi": [
+    "results",
+    "ma"
+   ]
   },
   {
    "id": "5a2bb6810519bb4e",
@@ -1543,7 +1869,16 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2021-05-11",
+   "dateExact": true,
+   "orderNo": "Appeal No. 375 of 2021",
+   "upsi": [
+    "buyback",
+    "results",
+    "ma",
+    "dividend"
+   ]
   },
   {
    "id": "a3861fb61a8899dc",
@@ -1574,7 +1909,13 @@
     "SDD (Reg. 3(5))",
     "SEBI Act s.12A"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2021-05-31",
+   "dateExact": true,
+   "orderNo": "Appeal No. 422 of 2021",
+   "upsi": [
+    "results"
+   ]
   },
   {
    "id": "c9f1b1aa54ef9c46",
@@ -1610,7 +1951,16 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2021-05-24",
+   "dateExact": true,
+   "orderNo": "Appeal No. 536 of 2021",
+   "upsi": [
+    "results",
+    "restructuring",
+    "ma",
+    "stake"
+   ]
   },
   {
    "id": "fe9c7284d10aa5f8",
@@ -1645,7 +1995,16 @@
     "SEBI Act s.15G",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2021-04-27",
+   "dateExact": true,
+   "orderNo": "Appeal No. 313 of 2021",
+   "upsi": [
+    "ma",
+    "stake",
+    "results",
+    "dividend"
+   ]
   },
   {
    "id": "00c4514703f2fa9b",
@@ -1680,7 +2039,16 @@
     "SEBI Act s.15J",
     "Trading window"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2021-04-27",
+   "dateExact": true,
+   "orderNo": "WTM/AB/IVD/ID16/04/2021-22",
+   "upsi": [
+    "fundraise",
+    "ma",
+    "results",
+    "dividend"
+   ]
   },
   {
    "id": "418ee63b9d20b8e6",
@@ -1707,7 +2075,11 @@
     "PIT Reg. 3",
     "SEBI Act s.15G"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2020-11-10",
+   "dateExact": true,
+   "orderNo": "SO/PM/VC/2020-21/6253",
+   "upsi": []
   },
   {
    "id": "65dc294cf7bf8d32",
@@ -1738,7 +2110,15 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2020-06-30",
+   "dateExact": true,
+   "orderNo": "Order/PM/NK/2020-21/8081",
+   "upsi": [
+    "ma",
+    "stake",
+    "fundraise"
+   ]
   },
   {
    "id": "69708053dc375a5d",
@@ -1769,7 +2149,15 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2020-06-30",
+   "dateExact": true,
+   "orderNo": "Order/PM/NK/2020-21/8082",
+   "upsi": [
+    "ma",
+    "stake",
+    "fundraise"
+   ]
   },
   {
    "id": "4a2d8af5dfe69923",
@@ -1800,7 +2188,15 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2020-06-30",
+   "dateExact": true,
+   "orderNo": "Order/PM/NK/2020-21/8083",
+   "upsi": [
+    "ma",
+    "stake",
+    "fundraise"
+   ]
   },
   {
    "id": "b4737e7eee3fe5c8",
@@ -1833,7 +2229,13 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2020-05-29",
+   "dateExact": true,
+   "orderNo": "Order/AA/AR/2020-21/7796-7802",
+   "upsi": [
+    "ma"
+   ]
   },
   {
    "id": "91935b167c814fd2",
@@ -1860,7 +2262,14 @@
     "PIT Reg. 2",
     "PIT Reg. 3"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2019-08-30",
+   "dateExact": true,
+   "orderNo": "Appeal No. 430 of 2019",
+   "upsi": [
+    "ma",
+    "stake"
+   ]
   },
   {
    "id": "3bb48c08f1d7db38",
@@ -1891,7 +2300,13 @@
     "SEBI Act s.15G",
     "SEBI Act s.15J"
    ],
-   "outcome": "penalty"
+   "outcome": "penalty",
+   "orderDate": "2019-06-28",
+   "dateExact": true,
+   "orderNo": "Appeal No. 397 of 2019",
+   "upsi": [
+    "kmp"
+   ]
   },
   {
    "id": "6121b287bb867a36",
@@ -1914,7 +2329,11 @@
    "penalty": 0,
    "penaltyDetected": false,
    "citations": [],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2019-05-31",
+   "dateExact": true,
+   "orderNo": "",
+   "upsi": []
   },
   {
    "id": "359e77a95cf96d5e",
@@ -1944,7 +2363,13 @@
     "PIT Reg. 4",
     "SEBI Act s.12A"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2018-08-29",
+   "dateExact": true,
+   "orderNo": "Appeal No. 477 of 2018",
+   "upsi": [
+    "kmp"
+   ]
   },
   {
    "id": "774879b1b2476c56",
@@ -1970,7 +2395,16 @@
     "PIT Reg. 2",
     "PIT Reg. 4"
    ],
-   "outcome": "exonerated"
+   "outcome": "exonerated",
+   "orderDate": "2018-04-16",
+   "dateExact": true,
+   "orderNo": "WTM/MPB/IVD/ID",
+   "upsi": [
+    "results",
+    "dividend",
+    "ma",
+    "order-win"
+   ]
   },
   {
    "id": "ac46061098d92aec",
@@ -2000,7 +2434,13 @@
     "PIT Reg. 4",
     "SEBI Act s.12A"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2017-11-22",
+   "dateExact": true,
+   "orderNo": "Appeal No. 08 of 2018",
+   "upsi": [
+    "ma"
+   ]
   },
   {
    "id": "1e78bc87f91a6da5",
@@ -2030,7 +2470,13 @@
     "PIT Reg. 4",
     "SEBI Act s.12A"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2017-08-02",
+   "dateExact": true,
+   "orderNo": "WTM/SR/IVD/ID",
+   "upsi": [
+    "ma"
+   ]
   },
   {
    "id": "032465c2c1120a68",
@@ -2060,7 +2506,13 @@
     "PIT Reg. 4",
     "SEBI Act s.12A"
    ],
-   "outcome": "settled"
+   "outcome": "settled",
+   "orderDate": "2017-08-02",
+   "dateExact": true,
+   "orderNo": "WTM/SR/IVD/ID",
+   "upsi": [
+    "ma"
+   ]
   },
   {
    "id": "7bbe714a0bad8816",
@@ -2087,7 +2539,14 @@
     "PIT Reg. 3",
     "SEBI Act s.12A"
    ],
-   "outcome": "unclear"
+   "outcome": "unclear",
+   "orderDate": "2016-01-05",
+   "dateExact": true,
+   "orderNo": "Appeal No. 03 of 2016",
+   "upsi": [
+    "ma",
+    "dividend"
+   ]
   }
  ]
 }
