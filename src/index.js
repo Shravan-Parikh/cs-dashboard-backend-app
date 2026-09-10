@@ -7,6 +7,7 @@ import companyRoutes from './routes/companies.js';
 import announcementRoutes from './routes/announcements.js';
 import complianceRoutes from './routes/compliance.js';
 import lawRoutes from './routes/law.js';
+import caseRoutes from './routes/cases.js';
 import workspaceRoutes from './routes/workspace.js';
 import taskRoutes from './routes/tasks.js';
 import { pdfRouter, exportRouter } from './routes/export.js';
@@ -56,6 +57,7 @@ app.use('/api', requireAuth, companyRoutes);
 app.use('/api', requireAuth, announcementRoutes);
 app.use('/api', requireAuth, complianceRoutes);
 app.use('/api', requireAuth, lawRoutes);
+app.use('/api', requireAuth, caseRoutes);
 app.use('/api', requireAuth, exportRouter);
 
 // Persistent per-user data (watchlist, saved views) + admin views. These carry
